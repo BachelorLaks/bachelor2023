@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.23)  7 FEB 2023 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.23)  7 FEB 2023 13:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -811,28 +811,28 @@ Package gensymb Info: Using \textmu for \micro on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./Sections/Introduction.tex) (./Sections/Theory and literature.tex) [1
+(./Sections/Introduction.tex) (./Sections/Theory and literature.tex) (./Sections/Methodology.tex) (./Sections/Results and discussion.tex) (./Sections/Conclusion.tex) [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Main.aux)
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 0CD2562061EB3DDB01D2EF1FA4F071AA;257.
+(rerunfilecheck)             Checksum: B07C87A9466E4D81528837DE83547541;607.
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25353 strings out of 478268
- 487086 string characters out of 5846346
- 1187162 words of memory out of 5000000
- 43269 multiletter control sequences out of 15000+600000
+ 25378 strings out of 478268
+ 487735 string characters out of 5846346
+ 1192162 words of memory out of 5000000
+ 43282 multiletter control sequences out of 15000+600000
  470163 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,11n,90p,817b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Main.pdf (1 page, 22820 bytes).
+Output written on Main.pdf (1 page, 32809 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1025,6 +1025,30 @@ INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT Main.aux
 INPUT ./Main.out
