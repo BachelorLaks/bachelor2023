@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber Main"] 1675773999 "Main.bcf" "Main.bbl" "Main" 1675774046
-  "Main.bcf" 1675774046 106689 32aacdaf1565f5671aff77dadc7edfed "pdflatex"
+["biber Main"] 1675773999 "Main.bcf" "Main.bbl" "Main" 1675774190
+  "Main.bcf" 1675774190 106689 32aacdaf1565f5671aff77dadc7edfed "pdflatex"
   (generated)
   "Main.bbl"
   "Main.blg"
-["pdflatex"] 1675774045 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" "Main.pdf" "Main" 1675774046
+["pdflatex"] 1675774189 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" "Main.pdf" "Main" 1675774190
   "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" 1675774038 282 9cf26f4cd72b48d7d8cbe235578a1c33 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -120,14 +120,14 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1666532038 2826445 775a96021795f568233675dc42d6644f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Main.aux" 1675774046 1436 0743a38b1eb29fe2bb9dd39e1730ec02 "pdflatex"
+  "Main.aux" 1675774190 1436 0743a38b1eb29fe2bb9dd39e1730ec02 "pdflatex"
   "Main.bbl" 1675774000 466 ee04f40f768daeed26442158e95aba61 "biber Main"
-  "Main.out" 1675774046 607 b07c87a9466e4d81528837de83547541 "pdflatex"
-  "Main.run.xml" 1675774046 2386 a97a56b94de14b564f5caac50ec2f4be "pdflatex"
+  "Main.out" 1675774190 607 b07c87a9466e4d81528837de83547541 "pdflatex"
+  "Main.run.xml" 1675774190 2386 a97a56b94de14b564f5caac50ec2f4be "pdflatex"
   "Main.tex" 1675774038 282 9cf26f4cd72b48d7d8cbe235578a1c33 ""
   "Sections/Conclusion.tex" 1675767346 20 b50204e17c0a475d3d65191e029fdf1d ""
   "Sections/Introduction.tex" 1675769238 785 d86871f643728409b403efb406a9fd76 ""
-  "Sections/Methodology.tex" 1675773970 143 f7b853e864fa2c4673bbb687a5ba011d ""
+  "Sections/Methodology.tex" 1675774189 161 77013988f127bfda0809ee83fa635d0b ""
   "Sections/Results and discussion.tex" 1675767264 32 d65497e7f6d7659e55c623157ad452f7 ""
   "Sections/Theory and literature.tex" 1675769238 385 e774e06f4d95d4a0b5f0d1ef55640b61 ""
   "packages.sty" 1675768729 5037 c0b3e8a412f5a825690b9955d60818f0 ""
