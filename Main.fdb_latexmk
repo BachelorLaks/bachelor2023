@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1675767633 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" "Main.pdf" "Main" 1675767634
+["pdflatex"] 1675767722 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" "Main.pdf" "Main" 1675767722
   "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" 1675767633 187 0e3887b5d86f762eb00f0adc09c0b70a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -15,10 +15,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1666532038 2826445 775a96021795f568233675dc42d6644f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Main.aux" 1675767634 132 becad25d16353fbd81e5644d2e8bca32 "pdflatex"
+  "Main.aux" 1675767722 241 be1bd9d06607e541764fa4f49ccc161c "pdflatex"
   "Main.tex" 1675767633 187 0e3887b5d86f762eb00f0adc09c0b70a ""
   "Sections/Introduction.tex" 1675766331 45 91b7c9b5329bc82b6b6832e71ffc51c5 ""
-  "Sections/Theory and literature.tex" 1675767125 33 66c82a9efd7fe120c83b61740fc3e004 ""
+  "Sections/Theory and literature.tex" 1675767720 33 c7a36365eba3906f2a8d430d27b4f55e ""
   (generated)
   "Main.aux"
   "Main.log"
