@@ -1,21 +1,19 @@
 # Fdb version 3
-["pdflatex"] 1675765928 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" "main.pdf" "main" 1675765928
-  "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" 1675765402 115 94e3b605e3ffc75872608748c4c58c24 ""
+["pdflatex"] 1675766032 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" "Main.pdf" "Main" 1675766033
+  "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex" 1675766032 81 99f706c7779b99fee4a63dd27f20c898 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls" 1636758526 20144 8a7de377ae7a11ee924a7499611f5a9d ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/base/size12.clo" 1636758526 8449 bc7344e882df4d7e51c046514dee83e4 ""
-  "/usr/local/texlive/2022/texmf-dist/tex/latex/blindtext/blindtext.sty" 1325892463 47295 de48b7f8ebf4b54709a2f6b2c7106dd5 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1644269979 29921 d0acc05a38bd4aa3af2017f0b7c137ce ""
-  "/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty" 1622581934 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1666532038 2826445 775a96021795f568233675dc42d6644f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.aux" 1675765928 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.tex" 1675765402 115 94e3b605e3ffc75872608748c4c58c24 ""
+  "Main.aux" 1675766033 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "Main.tex" 1675766032 81 99f706c7779b99fee4a63dd27f20c898 ""
   (generated)
-  "main.aux"
-  "main.log"
-  "main.pdf"
+  "Main.aux"
+  "Main.log"
+  "Main.pdf"
