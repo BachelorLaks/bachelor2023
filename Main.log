@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.23)  7 FEB 2023 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.23)  15 MAR 2023 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex
-(/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/Main.tex
+**/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex
+(/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -676,8 +676,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'british'.
- (./Main.aux)
-\openout1 = `Main.aux'.
+ (./main.aux)
+\openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -709,11 +709,11 @@ File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `Main.bcf'.
+\openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Main.bbl' found.
- (./Main.bbl)
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
@@ -734,9 +734,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
- (./Main.out) (./Main.out)
+ (./main.out) (./main.out)
 \@outlinefile=\write5
-\openout5 = `Main.out'.
+\openout5 = `main.out'.
 
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -811,13 +811,18 @@ Package gensymb Info: Using \textmu for \micro on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./Sections/Introduction.tex) (./Sections/Theory and literature.tex) (./Sections/Methodology.tex) (./Sections/Results and discussion.tex) (./Sections/Conclusion.tex) [1
+(./Sections/Introduction.tex) (./Sections/Theory and literature.tex) (./Sections/Methodology.tex)
+Overfull \hbox (17.95544pt too wide) in paragraph at lines 3--12
+\OT1/cmr/m/n/12 - AR-IMA, https://www.machinelearningplus.com/time-series/arima-model-time-series-
+ []
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Main.aux)
-Package rerunfilecheck Info: File `Main.out' has not changed.
+(./Sections/Results and discussion.tex) (./Sections/Conclusion.tex) [1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B07C87A9466E4D81528837DE83547541;607.
-Package logreq Info: Writing requests to 'Main.run.xml'.
-\openout1 = `Main.run.xml'.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -829,7 +834,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  85i,11n,90p,817b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Main.pdf (1 page, 32815 bytes).
+Output written on main.pdf (1 page, 33025 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
