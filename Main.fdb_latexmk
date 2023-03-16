@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1678897773 "main.bcf" "main.bbl" "main" 1678898146
-  "main.bcf" 1678898146 107161 ea28b03b7fa6921085afb4333c14c747 "pdflatex"
-  "references.bib" 1678897592 2054 2ffbfccc1004840cde863934cf02f0a6 ""
+["biber main"] 1678971987 "main.bcf" "main.bbl" "main" 1678972310
+  "main.bcf" 1678972310 107299 c60a79bad14a1d55d65a4dc44f0ce91c "pdflatex"
+  "references.bib" 1678967837 2484 d9ee0ce72e0f88b9c1ce4848d7878ffc ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1678898145 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" "main.pdf" "main" 1678898146
+["pdflatex"] 1678972309 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" "main.pdf" "main" 1678972310
   "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" 1678898145 445 37a46a152db2c38b1693daa79e11fff3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -157,13 +157,13 @@
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Sections/Conclusion.tex" 1675767346 20 b50204e17c0a475d3d65191e029fdf1d ""
   "Sections/Introduction.tex" 1678897602 814 9640ac2adc55d5dad3a51d3885c3fbeb ""
-  "Sections/Methodology.tex" 1678897007 318 9fe32fc9088e420121086b94b8c5cd54 ""
+  "Sections/Methodology.tex" 1678972309 421 3a3ee6d6234f5fb891feea94b2ee7952 ""
   "Sections/Results and discussion.tex" 1675767264 32 d65497e7f6d7659e55c623157ad452f7 ""
   "Sections/Theory and literature.tex" 1675769238 385 e774e06f4d95d4a0b5f0d1ef55640b61 ""
-  "main.aux" 1678898146 1727 73c90d4b7a41bbeb07258824aa3bceab "pdflatex"
-  "main.bbl" 1678897775 4744 89917f0bf92c678b99d947a02279d5ac "biber main"
-  "main.out" 1678898146 709 bff90de4a4410bcdee48247f5b0fb5f1 "pdflatex"
-  "main.run.xml" 1678898146 2386 cdadbf9c4b651623a87cff1b7460f226 "pdflatex"
+  "main.aux" 1678972310 1948 8ea7ee36660edfc44d32244b81893416 "pdflatex"
+  "main.bbl" 1678971989 6176 ed6396e2b08f9138022edd1d93889894 "biber main"
+  "main.out" 1678972310 709 bff90de4a4410bcdee48247f5b0fb5f1 "pdflatex"
+  "main.run.xml" 1678972310 2386 cdadbf9c4b651623a87cff1b7460f226 "pdflatex"
   "main.tex" 1678898145 445 37a46a152db2c38b1693daa79e11fff3 ""
   "packages.sty" 1675768729 5037 c0b3e8a412f5a825690b9955d60818f0 ""
   (generated)
