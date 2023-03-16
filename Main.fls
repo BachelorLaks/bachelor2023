@@ -886,6 +886,28 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -897,6 +919,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT ./main.aux
 INPUT main.aux
 INPUT main.aux
@@ -1019,8 +1046,8 @@ INPUT ./Sections/Introduction.tex
 INPUT ./Sections/Introduction.tex
 INPUT ./Sections/Introduction.tex
 INPUT ./Sections/Introduction.tex
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
@@ -1035,68 +1062,98 @@ INPUT ./Sections/Methodology.tex
 INPUT ./Sections/Methodology.tex
 INPUT ./Sections/Methodology.tex
 INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
