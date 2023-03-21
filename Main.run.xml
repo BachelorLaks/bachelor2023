@@ -51,15 +51,19 @@
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
+      <file>bath.dbx</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>authoryear.bbx</file>
-      <file>authoryear-comp.bbx</file>
+      <file>bath.bbx</file>
       <file>authoryear-comp.cbx</file>
+      <file>bath.cbx</file>
       <file>biblatex.cfg</file>
-      <file>english.lbx</file>
       <file>british.lbx</file>
+      <file>english.lbx</file>
+      <file>english-bath.lbx</file>
+      <file>british-bath.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">

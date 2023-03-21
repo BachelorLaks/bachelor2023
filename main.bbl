@@ -34,6 +34,7 @@
       \strng{authorbibnamehash}{7efb2d68188d241b5847e754af601135}
       \strng{authornamehash}{7efb2d68188d241b5847e754af601135}
       \strng{authorfullhash}{7efb2d68188d241b5847e754af601135}
+      \field{labelalpha}{Berge2020}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -82,6 +83,7 @@
       \strng{authorbibnamehash}{f5d192acd9066e5facaab32c8173f6d0}
       \strng{authornamehash}{f5d192acd9066e5facaab32c8173f6d0}
       \strng{authorfullhash}{f5d192acd9066e5facaab32c8173f6d0}
+      \field{labelalpha}{HyndmanAthanasopoulos2021}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
@@ -133,10 +135,11 @@
       }
       \strng{namehash}{064901ac7d1123d2f64d44c1a84cb908}
       \strng{fullhash}{fee14bbb33b4d3b6f3470d1c13e54003}
-      \strng{bibnamehash}{064901ac7d1123d2f64d44c1a84cb908}
-      \strng{authorbibnamehash}{064901ac7d1123d2f64d44c1a84cb908}
+      \strng{bibnamehash}{fee14bbb33b4d3b6f3470d1c13e54003}
+      \strng{authorbibnamehash}{fee14bbb33b4d3b6f3470d1c13e54003}
       \strng{authornamehash}{064901ac7d1123d2f64d44c1a84cb908}
       \strng{authorfullhash}{fee14bbb33b4d3b6f3470d1c13e54003}
+      \field{labelalpha}{Johansen+2019}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{extradatescope}{labelyear}
@@ -152,7 +155,7 @@
       \field{pages}{103561}
       \range{pages}{1}
       \verb{doi}
-      \verb https://doi.org/10.1016/j.marpol.2019.103561
+      \verb 10.1016/j.marpol.2019.103561
       \endverb
       \verb{urlraw}
       \verb https://www.sciencedirect.com/science/article/pii/S0308597X1830914X
@@ -177,6 +180,7 @@
       \strng{authorbibnamehash}{29886150b3370ebeb13833e60033fe22}
       \strng{authornamehash}{29886150b3370ebeb13833e60033fe22}
       \strng{authorfullhash}{29886150b3370ebeb13833e60033fe22}
+      \field{labelalpha}{Meisingset2023}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
@@ -200,26 +204,26 @@
     \endentry
     \entry{seafood_from_norway_clipfish}{online}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c757a782f569dd2736197ac347ebd2fd}{%
+        {{un=0,uniquepart=base,hash=f4354f868bf5be43ab96154800fd46f8}{%
+           prefix={from},
+           prefixi={f\bibinitperiod},
+           prefixun=0,
            family={Norway},
            familyi={N\bibinitperiod},
            given={Seafood},
            giveni={S\bibinitperiod},
-           givenun=0,
-           prefix={from},
-           prefixi={f\bibinitperiod},
-           prefixun=0}}%
+           givenun=0}}%
       }
-      \strng{namehash}{c757a782f569dd2736197ac347ebd2fd}
-      \strng{fullhash}{c757a782f569dd2736197ac347ebd2fd}
-      \strng{bibnamehash}{c757a782f569dd2736197ac347ebd2fd}
-      \strng{authorbibnamehash}{c757a782f569dd2736197ac347ebd2fd}
-      \strng{authornamehash}{c757a782f569dd2736197ac347ebd2fd}
-      \strng{authorfullhash}{c757a782f569dd2736197ac347ebd2fd}
+      \strng{namehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{fullhash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{bibnamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authorbibnamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authornamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authorfullhash}{f4354f868bf5be43ab96154800fd46f8}
+      \field{labelalpha}{Norway}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{url}
+      \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{fromnorway.com}
@@ -250,10 +254,10 @@
       \strng{authorbibnamehash}{dfae347cbe647cd594122f36d32852f9}
       \strng{authornamehash}{dfae347cbe647cd594122f36d32852f9}
       \strng{authorfullhash}{dfae347cbe647cd594122f36d32852f9}
+      \field{labelalpha}{Sjømatråd}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{url}
+      \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nokkeltall.seafood.no}
@@ -281,6 +285,7 @@
       \strng{authorbibnamehash}{27f173147f22c55a86474fee83431e91}
       \strng{authornamehash}{27f173147f22c55a86474fee83431e91}
       \strng{authorfullhash}{27f173147f22c55a86474fee83431e91}
+      \field{labelalpha}{WWF2019}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{extradatescope}{labelyear}
@@ -299,6 +304,295 @@
       \endverb
       \verb{url}
       \verb https://www.worldwildlife.org/industries/sustainable-seafood
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{ynt/global//global/global}
+    \entry{Johansen_et_al_2019}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=fa6ea4d31cbcc994b481c72b924693e7}{%
+           family={Johansen},
+           familyi={J\bibinitperiod},
+           given={Ulf},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b96655904ed426e04a22bfdc27af157}{%
+           family={Bull-Berg},
+           familyi={B\bibinithyphendelim B\bibinitperiod},
+           given={Heidi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd3cfcbb1319ead1eefe86c4f9fbc793}{%
+           family={Vik},
+           familyi={V\bibinitperiod},
+           given={Lars\bibnamedelima H.},
+           giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2db78b000a0f8e85583ce53b0b7696a}{%
+           family={Stokka},
+           familyi={S\bibinitperiod},
+           given={Arne\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb0e8e22b4224121b581caf5cbcc89cb}{%
+           family={Richardsen},
+           familyi={R\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a721a9d7f89c99a5bd6a91694d809b3c}{%
+           family={Winther},
+           familyi={W\bibinitperiod},
+           given={Ulf},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{064901ac7d1123d2f64d44c1a84cb908}
+      \strng{fullhash}{fee14bbb33b4d3b6f3470d1c13e54003}
+      \strng{bibnamehash}{fee14bbb33b4d3b6f3470d1c13e54003}
+      \strng{authorbibnamehash}{fee14bbb33b4d3b6f3470d1c13e54003}
+      \strng{authornamehash}{064901ac7d1123d2f64d44c1a84cb908}
+      \strng{authorfullhash}{fee14bbb33b4d3b6f3470d1c13e54003}
+      \field{labelalpha}{Johansen+2019}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Harvesting, processing, and exporting of seafood are longheld traditions in Norway due to its vast marine resources. In the 1970s, Norway became an international leader in marine aquaculture. The seafood industry is of great importance to the Norwegian economy. This paper documents the seafood industry's direct and indirect effects on Norway's economy from 2004 to 2017. We use a national Input--Output model to quantify to what extent the Norwegian seafood industry has created appreciable effects both in the core industries of the value chain, as well as in the supplier industries and other industries through ripple effects. The total contribution is measured in terms of value added (contribution to GNP) and employment (FTE). We find particularly high growth in total value added generated by the seafood industry during the period. However, within the seafood industry, there are different trends associated with development for the value chain of fisheries and aquaculture. The value chain for aquaculture, which includes its impacts on other industries, is the fastest growing part of the seafood value chain, while fisheries show a more moderate growth. Hence, aquaculture became the dominant part of the Norwegian seafood value chain from 2010 to 2013 and onwards measured in value-added and employment, respectively.}
+      \field{issn}{0308-597X}
+      \field{journaltitle}{Marine Policy}
+      \field{title}{The Norwegian seafood industry -- Importance for the national economy}
+      \field{volume}{110}
+      \field{year}{2019}
+      \field{pages}{103561}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.marpol.2019.103561
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0308597X1830914X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0308597X1830914X
+      \endverb
+      \keyw{Input-output analysis,Seafood industry,Fisheries,Aquaculture,Policy makers}
+    \endentry
+    \entry{wwf_2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=27f173147f22c55a86474fee83431e91}{%
+           family={WWF},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{27f173147f22c55a86474fee83431e91}
+      \strng{fullhash}{27f173147f22c55a86474fee83431e91}
+      \strng{bibnamehash}{27f173147f22c55a86474fee83431e91}
+      \strng{authorbibnamehash}{27f173147f22c55a86474fee83431e91}
+      \strng{authornamehash}{27f173147f22c55a86474fee83431e91}
+      \strng{authorfullhash}{27f173147f22c55a86474fee83431e91}
+      \field{labelalpha}{WWF2019}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Wildlife Fund}
+      \field{title}{Sustainable Seafood | Industries | WWF}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.worldwildlife.org/industries/sustainable-seafood
+      \endverb
+      \verb{url}
+      \verb https://www.worldwildlife.org/industries/sustainable-seafood
+      \endverb
+    \endentry
+    \entry{ilaks_2020}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7efb2d68188d241b5847e754af601135}{%
+           family={Berge},
+           familyi={B\bibinitperiod},
+           given={Aslak},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7efb2d68188d241b5847e754af601135}
+      \strng{fullhash}{7efb2d68188d241b5847e754af601135}
+      \strng{bibnamehash}{7efb2d68188d241b5847e754af601135}
+      \strng{authorbibnamehash}{7efb2d68188d241b5847e754af601135}
+      \strng{authornamehash}{7efb2d68188d241b5847e754af601135}
+      \strng{authorfullhash}{7efb2d68188d241b5847e754af601135}
+      \field{labelalpha}{Berge2020}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{iLaks}
+      \field{month}{7}
+      \field{title}{Dette er verdens 20 største lakseoppdrettere}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ilaks.no/dette-er-verdens-20-storste-lakseoppdrettere-2/
+      \endverb
+      \verb{url}
+      \verb https://ilaks.no/dette-er-verdens-20-storste-lakseoppdrettere-2/
+      \endverb
+    \endentry
+    \entry{hyndman_athanasopoulos_2021}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2f709db8a046ae1d056e75c1f3aad31c}{%
+           family={Hyndman},
+           familyi={H\bibinitperiod},
+           given={Rob\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95cfbf5a8396e08b434cc6f7f5b18dc8}{%
+           family={Athanasopoulos},
+           familyi={A\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Melbourne}%
+      }
+      \list{publisher}{1}{%
+        {Otexts}%
+      }
+      \strng{namehash}{f5d192acd9066e5facaab32c8173f6d0}
+      \strng{fullhash}{f5d192acd9066e5facaab32c8173f6d0}
+      \strng{bibnamehash}{f5d192acd9066e5facaab32c8173f6d0}
+      \strng{authorbibnamehash}{f5d192acd9066e5facaab32c8173f6d0}
+      \strng{authornamehash}{f5d192acd9066e5facaab32c8173f6d0}
+      \strng{authorfullhash}{f5d192acd9066e5facaab32c8173f6d0}
+      \field{labelalpha}{HyndmanAthanasopoulos2021}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780987507136}
+      \field{title}{Forecasting: principles and practice}
+      \field{year}{2021}
+    \endentry
+    \entry{e24_gasprice_2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=29886150b3370ebeb13833e60033fe22}{%
+           family={Meisingset},
+           familyi={M\bibinitperiod},
+           given={Synnøve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{29886150b3370ebeb13833e60033fe22}
+      \strng{fullhash}{29886150b3370ebeb13833e60033fe22}
+      \strng{bibnamehash}{29886150b3370ebeb13833e60033fe22}
+      \strng{authorbibnamehash}{29886150b3370ebeb13833e60033fe22}
+      \strng{authornamehash}{29886150b3370ebeb13833e60033fe22}
+      \strng{authorfullhash}{29886150b3370ebeb13833e60033fe22}
+      \field{labelalpha}{Meisingset2023}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{e24.no}
+      \field{month}{1}
+      \field{title}{Skyhøye gasspriser ga historisk høy eksport i 2022}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://e24.no/norsk-oekonomi/i/xgOd7X/skyhoeye-gasspriser-ga-historisk-hoey-eksport-i-2022
+      \endverb
+      \verb{url}
+      \verb https://e24.no/norsk-oekonomi/i/xgOd7X/skyhoeye-gasspriser-ga-historisk-hoey-eksport-i-2022
+      \endverb
+    \endentry
+    \entry{seafood_from_norway_clipfish}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f4354f868bf5be43ab96154800fd46f8}{%
+           prefix={from},
+           prefixi={f\bibinitperiod},
+           prefixun=0,
+           family={Norway},
+           familyi={N\bibinitperiod},
+           given={Seafood},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{fullhash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{bibnamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authorbibnamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authornamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authorfullhash}{f4354f868bf5be43ab96154800fd46f8}
+      \field{labelalpha}{Norway}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{fromnorway.com}
+      \field{title}{Clipfish}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://fromnorway.com/seafood-from-norway/clipfish/
+      \endverb
+      \verb{url}
+      \verb https://fromnorway.com/seafood-from-norway/clipfish/
+      \endverb
+    \endentry
+    \entry{seafood_nokkeltall}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfae347cbe647cd594122f36d32852f9}{%
+           family={Sjømatråd},
+           familyi={S\bibinitperiod},
+           given={Norges},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{fullhash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{bibnamehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{authorbibnamehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{authornamehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{authorfullhash}{dfae347cbe647cd594122f36d32852f9}
+      \field{labelalpha}{Sjømatråd}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{nokkeltall.seafood.no}
+      \field{title}{Nøkkeltall}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nokkeltall.seafood.no/
+      \endverb
+      \verb{url}
+      \verb https://nokkeltall.seafood.no/
       \endverb
     \endentry
   \enddatalist
