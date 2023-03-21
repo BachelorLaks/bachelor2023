@@ -126,6 +126,40 @@
       \endverb
       \keyw{Input-output analysis,Seafood industry,Fisheries,Aquaculture,Policy makers}
     \endentry
+    \entry{norges_sjomatrad_nokkeltall}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfae347cbe647cd594122f36d32852f9}{%
+           family={Sjømatråd},
+           familyi={S\bibinitperiod},
+           given={Norges},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{fullhash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{bibnamehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{authorbibnamehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{authornamehash}{dfae347cbe647cd594122f36d32852f9}
+      \strng{authorfullhash}{dfae347cbe647cd594122f36d32852f9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{nokkeltall.seafood.no}
+      \field{title}{Nøkkeltall}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nokkeltall.seafood.no/
+      \endverb
+      \verb{url}
+      \verb https://nokkeltall.seafood.no/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

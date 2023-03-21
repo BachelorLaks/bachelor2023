@@ -2346,9 +2346,11 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Johansen_et_al_2019</bcf:citekey>
-    <bcf:citekey order="2">hyndman_athanasopoulos_2021</bcf:citekey>
-    <bcf:citekey order="3">Johansen_et_al_2019</bcf:citekey>
-    <bcf:citekey order="4">hyndman_athanasopoulos_2021</bcf:citekey>
+    <bcf:citekey order="2" nocite="1">norges_sjomatrad_nokkeltall</bcf:citekey>
+    <bcf:citekey order="3">hyndman_athanasopoulos_2021</bcf:citekey>
+    <bcf:citekey order="4">Johansen_et_al_2019</bcf:citekey>
+    <bcf:citekey order="5">norges_sjomatrad_nokkeltall</bcf:citekey>
+    <bcf:citekey order="6">hyndman_athanasopoulos_2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
