@@ -1048,43 +1048,43 @@ INPUT ./Sections/Introduction.tex
 INPUT ./Sections/Introduction.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Theory and literature.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm

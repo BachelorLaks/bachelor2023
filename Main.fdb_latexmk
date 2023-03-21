@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1678975427 "main.bcf" "main.bbl" "main" 1678978296
-  "main.bcf" 1678978296 107299 c60a79bad14a1d55d65a4dc44f0ce91c "pdflatex"
-  "references.bib" 1678967837 2484 d9ee0ce72e0f88b9c1ce4848d7878ffc ""
+["biber main"] 1679413158 "main.bcf" "main.bbl" "main" 1679413177
+  "main.bcf" 1679413177 107299 c60a79bad14a1d55d65a4dc44f0ce91c "pdflatex"
+  "references.bib" 1679413144 3437 0100bfb11df96eb04c5fc71fc20cb07e ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1678978295 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" "main.pdf" "main" 1678978296
+["pdflatex"] 1679413176 "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" "main.pdf" "main" 1679413177
   "/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex" 1678977611 477 c77896bb04d85e9fda813171c92b3d6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -159,14 +159,14 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1666532038 2826445 775a96021795f568233675dc42d6644f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Sections/Conclusion.tex" 1675767346 20 b50204e17c0a475d3d65191e029fdf1d ""
-  "Sections/Introduction.tex" 1678897602 814 9640ac2adc55d5dad3a51d3885c3fbeb ""
+  "Sections/Introduction.tex" 1679413158 3744 5fdd3e6a4e6c78cd853042589e51840c ""
   "Sections/Methodology.tex" 1678978295 1455 dde7404a095570d061bebb222fc42bda ""
   "Sections/Results and discussion.tex" 1675767264 32 d65497e7f6d7659e55c623157ad452f7 ""
   "Sections/Theory and literature.tex" 1675769238 385 e774e06f4d95d4a0b5f0d1ef55640b61 ""
-  "main.aux" 1678978296 2434 d206a92e9f6b9d7f9cf13fe03bf3162c "pdflatex"
-  "main.bbl" 1678975429 6176 ed6396e2b08f9138022edd1d93889894 "biber main"
-  "main.out" 1678978296 1233 f4675b3d828e4043cb7717a9f26982bc "pdflatex"
-  "main.run.xml" 1678978296 2386 cdadbf9c4b651623a87cff1b7460f226 "pdflatex"
+  "main.aux" 1679413177 3103 ea329aafd2e65b928e06e0070f7817e4 "pdflatex"
+  "main.bbl" 1679413175 6176 ed6396e2b08f9138022edd1d93889894 "biber main"
+  "main.out" 1679413177 2241 587f1f4e77756cdc388a5e924862cb4b "pdflatex"
+  "main.run.xml" 1679413177 2386 cdadbf9c4b651623a87cff1b7460f226 "pdflatex"
   "main.tex" 1678977611 477 c77896bb04d85e9fda813171c92b3d6a ""
   "packages.sty" 1678977592 5119 c0d855ff7c1aa3d76d8a77ccf4a33e37 ""
   (generated)
