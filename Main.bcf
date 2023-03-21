@@ -2345,12 +2345,20 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Johansen_et_al_2019</bcf:citekey>
-    <bcf:citekey order="2" nocite="1">norges_sjomatrad_nokkeltall</bcf:citekey>
-    <bcf:citekey order="3">hyndman_athanasopoulos_2021</bcf:citekey>
-    <bcf:citekey order="4">Johansen_et_al_2019</bcf:citekey>
-    <bcf:citekey order="5">norges_sjomatrad_nokkeltall</bcf:citekey>
-    <bcf:citekey order="6">hyndman_athanasopoulos_2021</bcf:citekey>
+    <bcf:citekey order="1">wwf_2019</bcf:citekey>
+    <bcf:citekey order="2">seafood_from_norway_clipfish</bcf:citekey>
+    <bcf:citekey order="3">Johansen_et_al_2019</bcf:citekey>
+    <bcf:citekey order="4">e24_gasprice_2023</bcf:citekey>
+    <bcf:citekey order="5">seafood_nokkeltall</bcf:citekey>
+    <bcf:citekey order="6">ilaks_2020</bcf:citekey>
+    <bcf:citekey order="7">hyndman_athanasopoulos_2021</bcf:citekey>
+    <bcf:citekey order="8">wwf_2019</bcf:citekey>
+    <bcf:citekey order="9">seafood_from_norway_clipfish</bcf:citekey>
+    <bcf:citekey order="10">Johansen_et_al_2019</bcf:citekey>
+    <bcf:citekey order="11">e24_gasprice_2023</bcf:citekey>
+    <bcf:citekey order="12">seafood_nokkeltall</bcf:citekey>
+    <bcf:citekey order="13">ilaks_2020</bcf:citekey>
+    <bcf:citekey order="14">hyndman_athanasopoulos_2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

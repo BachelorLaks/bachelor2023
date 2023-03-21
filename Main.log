@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.23)  21 MAR 2023 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.23)  21 MAR 2023 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -850,17 +850,17 @@ Package gensymb Info: Using \textmu for \micro on input line 5.
 (./Sections/Introduction.tex [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (112.37433pt too wide) in paragraph at lines 28--33
+Overfull \hbox (112.37433pt too wide) in paragraph at lines 26--31
 []\OT1/ptm/m/n/12 Kilde 2: https://www.worldwildlife.org/industries/sustainable-seafood Kilde 3: https://fromnorway.com/seafood-
  []
 
 
-Overfull \hbox (25.1963pt too wide) in paragraph at lines 28--33
+Overfull \hbox (25.1963pt too wide) in paragraph at lines 26--31
 \OT1/ptm/m/n/12 from-norway/clipfish/ Kilde 4: https://e24.no/norsk-oekonomi/i/xgOd7X/skyhoeye-gasspriser-
  []
 
 
-Overfull \hbox (79.18306pt too wide) in paragraph at lines 28--33
+Overfull \hbox (79.18306pt too wide) in paragraph at lines 26--31
 \OT1/ptm/m/n/12 ga-historisk-hoey-eksport-i-2022 (ikke direkte sitert i avs-nit-tet, men) Kilde 5: ht-tps://nokkeltall.seafood.no
  []
 
@@ -895,7 +895,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 21.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [5] (./main.aux)
+)
+Overfull \hbox (7.1177pt too wide) in paragraph at lines 21--21
+[][]\OT1/ptm/m/n/12 WWF (2019). \OT1/ptm/m/it/12 Sus-tain-able Sea-food | In-dus-tries | WWF\OT1/ptm/m/n/12 . \OT1/ptm/m/sc/12 url\OT1/ptm/m/n/12 : [][]$\OT1/cmss/m/n/12 https : / / www . worldwildlife .
+ []
+
+[5] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 587F1F4E77756CDC388A5E924862CB4B;2241.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -903,18 +908,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25909 strings out of 478268
- 497772 string characters out of 5846346
- 1194863 words of memory out of 5000000
- 43746 multiletter control sequences out of 15000+600000
+ 25935 strings out of 478268
+ 498515 string characters out of 5846346
+ 1196123 words of memory out of 5000000
+ 43768 multiletter control sequences out of 15000+600000
  491632 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,11n,90p,1520b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 68061 bytes).
+Output written on main.pdf (5 pages, 72812 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
