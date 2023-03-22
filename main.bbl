@@ -19,6 +19,43 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{artley_2022}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=647606bd8db3d726b6f39adeaa410bf8}{%
+           family={Artley},
+           familyi={A\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{fullhash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{bibnamehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{authorbibnamehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{authornamehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{authorfullhash}{647606bd8db3d726b6f39adeaa410bf8}
+      \field{labelalpha}{Artley2022}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
+      \field{month}{5}
+      \field{title}{Time Series Forecasting with ARIMA , SARIMA and SARIMAX}
+      \field{urlday}{22}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6
+      \endverb
+    \endentry
     \entry{ilaks_2020}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7efb2d68188d241b5847e754af601135}{%
@@ -202,6 +239,45 @@
       \verb https://e24.no/norsk-oekonomi/i/xgOd7X/skyhoeye-gasspriser-ga-historisk-hoey-eksport-i-2022
       \endverb
     \endentry
+    \entry{nau_2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a83ef281b6fce63fd50696cdaa9ff8b}{%
+           family={Nau},
+           familyi={N\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Duke University}%
+      }
+      \strng{namehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{fullhash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{bibnamehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{authorbibnamehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{authornamehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{authorfullhash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \field{labelalpha}{Nau2019}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Duke.edu}
+      \field{title}{Introduction to ARIMA: nonseasonal models}
+      \field{urlday}{22}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://people.duke.edu/~rnau/411arim.htm
+      \endverb
+      \verb{url}
+      \verb https://people.duke.edu/~rnau/411arim.htm
+      \endverb
+    \endentry
     \entry{seafood_from_norway_clipfish}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f4354f868bf5be43ab96154800fd46f8}{%
@@ -220,10 +296,11 @@
       \strng{authorbibnamehash}{f4354f868bf5be43ab96154800fd46f8}
       \strng{authornamehash}{f4354f868bf5be43ab96154800fd46f8}
       \strng{authorfullhash}{f4354f868bf5be43ab96154800fd46f8}
-      \field{labelalpha}{Norway}
+      \field{labelalpha}{Norway2023}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{fromnorway.com}
@@ -231,6 +308,7 @@
       \field{urlday}{21}
       \field{urlmonth}{3}
       \field{urlyear}{2023}
+      \field{year}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://fromnorway.com/seafood-from-norway/clipfish/
@@ -412,6 +490,45 @@
       \endverb
       \keyw{Input-output analysis,Seafood industry,Fisheries,Aquaculture,Policy makers}
     \endentry
+    \entry{nau_2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a83ef281b6fce63fd50696cdaa9ff8b}{%
+           family={Nau},
+           familyi={N\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Duke University}%
+      }
+      \strng{namehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{fullhash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{bibnamehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{authorbibnamehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{authornamehash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \strng{authorfullhash}{7a83ef281b6fce63fd50696cdaa9ff8b}
+      \field{labelalpha}{Nau2019}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Duke.edu}
+      \field{title}{Introduction to ARIMA: nonseasonal models}
+      \field{urlday}{22}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://people.duke.edu/~rnau/411arim.htm
+      \endverb
+      \verb{url}
+      \verb https://people.duke.edu/~rnau/411arim.htm
+      \endverb
+    \endentry
     \entry{wwf_2019}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=27f173147f22c55a86474fee83431e91}{%
@@ -520,6 +637,43 @@
       \field{title}{Forecasting: principles and practice}
       \field{year}{2021}
     \endentry
+    \entry{artley_2022}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=647606bd8db3d726b6f39adeaa410bf8}{%
+           family={Artley},
+           familyi={A\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{fullhash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{bibnamehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{authorbibnamehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{authornamehash}{647606bd8db3d726b6f39adeaa410bf8}
+      \strng{authorfullhash}{647606bd8db3d726b6f39adeaa410bf8}
+      \field{labelalpha}{Artley2022}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
+      \field{month}{5}
+      \field{title}{Time Series Forecasting with ARIMA , SARIMA and SARIMAX}
+      \field{urlday}{22}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6
+      \endverb
+    \endentry
     \entry{e24_gasprice_2023}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=29886150b3370ebeb13833e60033fe22}{%
@@ -557,6 +711,45 @@
       \verb https://e24.no/norsk-oekonomi/i/xgOd7X/skyhoeye-gasspriser-ga-historisk-hoey-eksport-i-2022
       \endverb
     \endentry
+    \entry{seafood_from_norway_clipfish}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f4354f868bf5be43ab96154800fd46f8}{%
+           prefix={from},
+           prefixi={f\bibinitperiod},
+           prefixun=0,
+           family={Norway},
+           familyi={N\bibinitperiod},
+           given={Seafood},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{fullhash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{bibnamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authorbibnamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authornamehash}{f4354f868bf5be43ab96154800fd46f8}
+      \strng{authorfullhash}{f4354f868bf5be43ab96154800fd46f8}
+      \field{labelalpha}{Norway2023}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{fromnorway.com}
+      \field{title}{Clipfish}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://fromnorway.com/seafood-from-norway/clipfish/
+      \endverb
+      \verb{url}
+      \verb https://fromnorway.com/seafood-from-norway/clipfish/
+      \endverb
+    \endentry
     \entry{oracle_ARIMA}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=30162ed78b6c10f731411f2fc440c24f}{%
@@ -588,43 +781,6 @@
       \endverb
       \verb{url}
       \verb https://docs.oracle.com/cd/E57185_01/CBREG/ch06s03s04s01.html
-      \endverb
-    \endentry
-    \entry{seafood_from_norway_clipfish}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f4354f868bf5be43ab96154800fd46f8}{%
-           prefix={from},
-           prefixi={f\bibinitperiod},
-           prefixun=0,
-           family={Norway},
-           familyi={N\bibinitperiod},
-           given={Seafood},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f4354f868bf5be43ab96154800fd46f8}
-      \strng{fullhash}{f4354f868bf5be43ab96154800fd46f8}
-      \strng{bibnamehash}{f4354f868bf5be43ab96154800fd46f8}
-      \strng{authorbibnamehash}{f4354f868bf5be43ab96154800fd46f8}
-      \strng{authornamehash}{f4354f868bf5be43ab96154800fd46f8}
-      \strng{authorfullhash}{f4354f868bf5be43ab96154800fd46f8}
-      \field{labelalpha}{Norway}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labeldatesource}{nodate}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{fromnorway.com}
-      \field{title}{Clipfish}
-      \field{urlday}{21}
-      \field{urlmonth}{3}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://fromnorway.com/seafood-from-norway/clipfish/
-      \endverb
-      \verb{url}
-      \verb https://fromnorway.com/seafood-from-norway/clipfish/
       \endverb
     \endentry
     \entry{seafood_nokkeltall}{online}{}
