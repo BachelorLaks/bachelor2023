@@ -1109,29 +1109,7 @@ INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
 INPUT ./Sections/Theory and literature.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Methodology.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Results and discussion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT ./Sections/Conclusion.tex
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
@@ -1177,9 +1155,9 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -1187,15 +1165,66 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Methodology.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Results and discussion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT ./Sections/Conclusion.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri8c.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmri8c.vf
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

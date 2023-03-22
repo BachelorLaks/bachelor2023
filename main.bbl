@@ -239,6 +239,39 @@
       \verb https://fromnorway.com/seafood-from-norway/clipfish/
       \endverb
     \endentry
+    \entry{oracle_ARIMA}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={Oracle},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{labelalpha}{Oracle2023}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{docs.oracle.com}
+      \field{title}{Oracle® Crystal Ball Reference and Examples Guide}
+      \field{urlday}{22}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.oracle.com/cd/E57185_01/CBREG/ch06s03s04s01.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/cd/E57185_01/CBREG/ch06s03s04s01.html
+      \endverb
+    \endentry
     \entry{seafood_nokkeltall}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=dfae347cbe647cd594122f36d32852f9}{%
@@ -522,6 +555,39 @@
       \endverb
       \verb{url}
       \verb https://e24.no/norsk-oekonomi/i/xgOd7X/skyhoeye-gasspriser-ga-historisk-hoey-eksport-i-2022
+      \endverb
+    \endentry
+    \entry{oracle_ARIMA}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={Oracle},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{labelalpha}{Oracle2023}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{docs.oracle.com}
+      \field{title}{Oracle® Crystal Ball Reference and Examples Guide}
+      \field{urlday}{22}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.oracle.com/cd/E57185_01/CBREG/ch06s03s04s01.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/cd/E57185_01/CBREG/ch06s03s04s01.html
       \endverb
     \endentry
     \entry{seafood_from_norway_clipfish}{online}{}

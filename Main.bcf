@@ -4055,13 +4055,15 @@
     <bcf:citekey order="5">seafood_nokkeltall</bcf:citekey>
     <bcf:citekey order="6">ilaks_2020</bcf:citekey>
     <bcf:citekey order="7">hyndman_athanasopoulos_2021</bcf:citekey>
-    <bcf:citekey order="8">wwf_2019</bcf:citekey>
-    <bcf:citekey order="9">seafood_from_norway_clipfish</bcf:citekey>
-    <bcf:citekey order="10">Johansen_et_al_2019</bcf:citekey>
-    <bcf:citekey order="11">e24_gasprice_2023</bcf:citekey>
-    <bcf:citekey order="12">seafood_nokkeltall</bcf:citekey>
-    <bcf:citekey order="13">ilaks_2020</bcf:citekey>
-    <bcf:citekey order="14">hyndman_athanasopoulos_2021</bcf:citekey>
+    <bcf:citekey order="8">oracle_ARIMA</bcf:citekey>
+    <bcf:citekey order="9">wwf_2019</bcf:citekey>
+    <bcf:citekey order="10">seafood_from_norway_clipfish</bcf:citekey>
+    <bcf:citekey order="11">Johansen_et_al_2019</bcf:citekey>
+    <bcf:citekey order="12">e24_gasprice_2023</bcf:citekey>
+    <bcf:citekey order="13">seafood_nokkeltall</bcf:citekey>
+    <bcf:citekey order="14">ilaks_2020</bcf:citekey>
+    <bcf:citekey order="15">hyndman_athanasopoulos_2021</bcf:citekey>
+    <bcf:citekey order="16">oracle_ARIMA</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

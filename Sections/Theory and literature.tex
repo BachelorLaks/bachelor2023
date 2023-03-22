@@ -4,3 +4,22 @@ Relevant theory will be:
 We envision using economic theories such as market equilibrium, Pareto efficiency and consumer choice theory. 
 Statistical theory, such as the presumptions for regression to evaluate whether our data sources meet the requirements, and our model is robust. 
 Neural networks, especially LSTM compared to other predictive models 
+
+\subsection{ARIMA --- SARIMAX}
+The ARIMA-model is one of the more popular and useful approaches to time series forecasting. The name is an acronym that stands for AutoRegressive Integrated Moving Average and the model utilizes these in order to predict future values solely on earlier values, it is therefore an univariate model. The SARIMAX-model is an extension of the ARIMA-model that also takes external factors and seasonality into account in order to better predict future values. SARIMAX can therefore be a multivariate model. (\cite{hyndman_athanasopoulos_2021})
+
+\subsubsection{Seasonality}
+
+\subsubsection{Auto Regressive (AR)}
+The first part of the ARIMA acronym is the Auto Regressive part. Auto comes from the greek word autos and mean self, in this context it means that the model is regressing on itself. This part of the model can be written as follows:
+\begin{equation}
+y_{t} = c + \phi_{1}y_{t-1} + \phi_{2}y_{t-2} + \dots + \phi_{p}y_{t-p} + \varepsilon_{t}
+\end{equation}
+
+Where c is a constant, $p$ is the number of lag observations or autoregressive terms, $\phi$ are the AR coefficients and $\varepsilon_{t}$ is the error term. (\cite{oracle_ARIMA}) This model is a "pure" AR-model and therefore relies solely on its own lags. 
+
+
+\subsubsection{Integrated (I)}
+
+\subsubsection{Moving Average (MA)}
+

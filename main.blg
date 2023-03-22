@@ -1,22 +1,22 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[73] biber-darwin:340> INFO - === Tue Mar 21, 2023, 21:53:13
-[91] Biber.pm:418> INFO - Reading 'main.bcf'
-[222] Biber.pm:972> INFO - Found 7 citekeys in bib section 0
-[240] Biber.pm:4383> INFO - Processing section 0
-[249] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[250] bibtex.pm:1713> INFO - LaTeX decoding ...
-[257] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[335] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[335] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[335] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-GB'
-[335] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
-[351] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[351] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[351] Biber.pm:4203> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-GB'
-[351] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
-[361] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[369] bbl.pm:757> INFO - Output to main.bbl
-[369] Biber.pm:130> WARN - legacy month field 'Jan' in entry 'e24_gasprice_2023' is not an integer - this will probably not sort properly.
-[369] Biber.pm:130> WARN - legacy month field 'Jul' in entry 'ilaks_2020' is not an integer - this will probably not sort properly.
-[369] Biber.pm:132> INFO - WARNINGS: 2
+[67] biber-darwin:340> INFO - === Wed Mar 22, 2023, 16:21:56
+[83] Biber.pm:418> INFO - Reading 'main.bcf'
+[217] Biber.pm:972> INFO - Found 8 citekeys in bib section 0
+[235] Biber.pm:4383> INFO - Processing section 0
+[244] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[245] bibtex.pm:1713> INFO - LaTeX decoding ...
+[254] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[325] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[325] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[325] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-GB'
+[325] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
+[341] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[341] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[341] Biber.pm:4203> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-GB'
+[341] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
+[351] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[359] bbl.pm:757> INFO - Output to main.bbl
+[359] Biber.pm:130> WARN - legacy month field 'Jan' in entry 'e24_gasprice_2023' is not an integer - this will probably not sort properly.
+[359] Biber.pm:130> WARN - legacy month field 'Jul' in entry 'ilaks_2020' is not an integer - this will probably not sort properly.
+[359] Biber.pm:132> INFO - WARNINGS: 2
