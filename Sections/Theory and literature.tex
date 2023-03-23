@@ -7,9 +7,11 @@ Neural networks, especially LSTM compared to other predictive models
 
 \subsection{Tensor flow}
 
-\subsection{ARIMA --- SARIMAX}
+\subsection{ARIMA --- SARIMAX}\label{ARIMATheory}
 
-The ARIMA-model is one of the more popular and useful approaches to time series forecasting. The name is an acronym that stands for AutoRegressive Integrated Moving Average and the model utilizes these in order to predict future values solely on earlier values, it is therefore an univariate model. The SARIMAX-model is an extension of the ARIMA-model that also takes external factors and seasonality into account in order to better predict future values. SARIMAX can therefore be a multivariate model. \parencite{hyndman_athanasopoulos_2021}
+The ARIMA-model is one of the more popular and useful approaches to time series forecasting. The name is an acronym that stands for AutoRegressive Integrated Moving Average and the model utilizes these in order to predict future values solely on earlier values, it is therefore an univariate model. In order for the model to be able to predict, the data has to be stationary, which means that the mean, variance and covariance are constant over time. Time-series data is especially prone to be non-stationary, which can be solved either by log-transforming the data, convert it to a percentage change or by differencing which is further explained in~\ref{IntegratedTheory}.
+
+The SARIMAX-model is an extension of the ARIMA-model that also takes external factors and seasonality into account in order to better predict future values. SARIMAX can therefore be a multivariate model. \parencite{hyndman_athanasopoulos_2021}
 
 \subsubsection{Auto Regressive (AR)}
 The first part of the ARIMA acronym is the Auto Regressive part. Auto comes from the greek word autos and mean self, in this context it means that the model is regressing on itself. This part of the model can be written as follows:
@@ -20,8 +22,8 @@ y_{t} = c + \phi_{1}y_{t-1} + \phi_{2}y_{t-2} + \cdots + \phi_{p}y_{t-p} + \vare
 Where c is a constant, $p$ is the number of lag observations or autoregressive terms, $\phi$ are the AR coefficients and $\varepsilon_{t}$ is the error term. $y_{t}$ is the data on which the AR-model is applied on. (\cite{oracle_ARIMA}) This model is a ``pure'' AR-model and relies therefore solely on its own lags. If $p$ is set to 1, the model looks at the previous value and tries to predict the next value. If $p$ is set to 2, the model looks at the previous two values and tries to predict the next value, and so on. (\cite{artley_2022})
 
 
-\subsubsection{Integrated (I)}
-The second part of the ARIMA acronym is the Integrated part. This part of the model is used to make the time series stationary. In the ARIMA-equation it is represented by the letter $d$ and is the number of differencing required to make the time series stationary. Usually the optimal amount of differencing is the least amount needed to make the data fluctuate around a well defined mean. (\cite{nau_2019}) 
+\subsubsection{Integrated (I)}\label{IntegratedTheory}
+The second part of the ARIMA acronym is the Integrated part. This part of the model is used to make the time series stationary. In the ARIMA-equation it is represented by the letter $d$ and is the number of differencing required to make the time series stationary. Usually the optimal amount of differencing is the least amount needed to make the data fluctuate around a well defined mean. (\cite{nau_2019}) It is the only form of converting the data to a stationary form that the ARIMA-model itself can do. Log-transforming and converting to a percentage change is done before the model is applied on the data. 
 
 \subsubsection{Moving Average (MA)}
 The third and last part of the ARIMA acronym is the Moving Average part. This incorporates the dependency of an observation on the residual errors from a moving average model applied to lagged observations. \parencite{hayes_2019} This part of the model can be written as follows:
