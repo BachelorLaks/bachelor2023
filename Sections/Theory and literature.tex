@@ -8,14 +8,8 @@ Neural networks, especially LSTM compared to other predictive models
 \subsection{Tensor flow}
 
 \subsection{ARIMA --- SARIMAX}
-Formula ARIMA: 
-\begin{equation}
-\hat{y'}_t = c + \phi_1y'_{t-1} + \phi_2y'_{t-2} + \cdots + \phi_py'_{t-p} + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + \cdots + \theta_q\epsilon_{t-q} + \epsilon_t
-\end{equation}
 
 The ARIMA-model is one of the more popular and useful approaches to time series forecasting. The name is an acronym that stands for AutoRegressive Integrated Moving Average and the model utilizes these in order to predict future values solely on earlier values, it is therefore an univariate model. The SARIMAX-model is an extension of the ARIMA-model that also takes external factors and seasonality into account in order to better predict future values. SARIMAX can therefore be a multivariate model. \parencite{hyndman_athanasopoulos_2021}
-
-\subsubsection{Seasonality}
 
 \subsubsection{Auto Regressive (AR)}
 The first part of the ARIMA acronym is the Auto Regressive part. Auto comes from the greek word autos and mean self, in this context it means that the model is regressing on itself. This part of the model can be written as follows:
@@ -35,10 +29,20 @@ The third and last part of the ARIMA acronym is the Moving Average part. This in
 \hat{y} = c + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + \cdots + \theta_q\epsilon_{t-q}
 \end{equation}
 
+Where c is a constant, $q$ is the order of the moving average, i.e the number of lagged forecast errors. $\theta$ are the MA coefficients and $\varepsilon_{t}$ is the error term. For example, if $q$ is 1, the output relies solely on the errors from the previous time step. If $q$ is 2, the output relies on the errors from the previous two time steps. (\cite{hyndman_athanasopoulos_2021}) 
 
+Combining these three parts of the ARIMA-model, we get the following general forecasting equation:
+\begin{equation}
+\hat{y}_t = c + \phi_1y_{t-1} + \phi_2y_{t-2} + \cdots + \phi_py_{t-p} + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + \cdots + \theta_q\epsilon_{t-q} + \epsilon_t
+\end{equation}
+
+\subsubsection{Seasonality}
+
+
+\subsubsection{Exogenous variables}
 
 \subsection{Exploratory analysis}
-\textbf{Exploratory data analysis (EDA} is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions (https://www.youtube.com/watch?v=QiqZliDXCCg).
+\textbf{Exploratory data analysis (EDA)} is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions (https://www.youtube.com/watch?v=QiqZliDXCCg).
 
 \subsection{Regression}
 Regression analysis is a reliable method of identifying which variables have impact on a topic of interest. Regression analysis consists of two types of variables; dependent and independent. The dependent variable is the main variable or factor that aasdasd is trying to predict or understand. The independent variables are the factors that dasdasd hypothesize to have an impact on the chosen dependent variable. 
