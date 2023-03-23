@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1679500281 "main.bcf" "main.bbl" "main" 1679565901
-  "main.bcf" 1679565901 164263 346e5cb9bdacd65c31f15884d681bb24 "pdflatex"
-  "references.bib" 1679530594 4238 43e061dd36f89c552e3a22209814fa38 ""
+["biber main"] 1679566104 "main.bcf" "main.bbl" "main" 1679566114
+  "main.bcf" 1679566114 164263 346e5cb9bdacd65c31f15884d681bb24 "pdflatex"
+  "references.bib" 1679565927 4243 2e8cfcf5faee7a98961c9ec55b964fda ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1679565899 "/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex" "main.pdf" "main" 1679565901
+["pdflatex"] 1679566112 "/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex" "main.pdf" "main" 1679566114
   "/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex" 1679530594 502 deb05b4458ff643a650a31960ce2b07e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -42,6 +42,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss9.tfm" 1136768653 1320 49357c421c0d469f88b867dd0c3d10e8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -183,11 +184,11 @@
   "Sections/Introduction.tex" 1679530594 3825 3d62ab668b1d8179c5d0d3d270441d8f ""
   "Sections/Methodology.tex" 1679530594 1367 0c79abc69524275893da985aafb99421 ""
   "Sections/Results and discussion.tex" 1677491562 32 d65497e7f6d7659e55c623157ad452f7 ""
-  "Sections/Theory and literature.tex" 1679565896 3948 885e4bc03a46d48d97330554341c1c5d ""
-  "main.aux" 1679565901 5931 3674f7e54f39ceee99fdd6c0eff87246 "pdflatex"
-  "main.bbl" 1679530594 34449 ac920611083ac4e09d3723033c1b2e32 "biber main"
-  "main.out" 1679565901 3857 52d0918aebeffd335b3cbdac986c7905 "pdflatex"
-  "main.run.xml" 1679565901 2503 a3673b61af8c3f8090fd14605a3e01d8 "pdflatex"
+  "Sections/Theory and literature.tex" 1679566104 4045 ba198125148843608c1f6a0f5704381c ""
+  "main.aux" 1679566114 5931 468234f3b9c3562c2dc7647c737c9e15 "pdflatex"
+  "main.bbl" 1679566109 34449 ac920611083ac4e09d3723033c1b2e32 "biber main"
+  "main.out" 1679566114 3857 52d0918aebeffd335b3cbdac986c7905 "pdflatex"
+  "main.run.xml" 1679566114 2503 a3673b61af8c3f8090fd14605a3e01d8 "pdflatex"
   "main.tex" 1679530594 502 deb05b4458ff643a650a31960ce2b07e ""
   "packages.sty" 1679530594 5304 bb7b65251bb495713f1a66db607dd6c1 ""
   (generated)

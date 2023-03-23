@@ -23,6 +23,7 @@ Where c is a constant, $p$ is the number of lag observations or autoregressive t
 The second part of the ARIMA acronym is the Integrated part. This part of the model is used to make the time series stationary. In the ARIMA-equation it is represented by the letter $d$ and is the number of differencing required to make the time series stationary. Usually the optimal amount of differencing is the least amount needed to make the data fluctuate around a well defined mean. (\cite{nau_2019}) 
 
 \subsubsection{Moving Average (MA)}
+$$\hat{y} = c + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + ... + \theta_q\epsilon_{t-q}$$
 
 \subsection{Exploratory analysis}
 \textbf{Exploratory data analysis (EDA} is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions (https://www.youtube.com/watch?v=QiqZliDXCCg).

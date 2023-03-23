@@ -1221,6 +1221,7 @@ INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
