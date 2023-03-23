@@ -1,5 +1,6 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
+<<<<<<< HEAD
 [71] biber-darwin:340> INFO - === Thu Mar 23, 2023, 11:09:41
 [89] Biber.pm:418> INFO - Reading 'main.bcf'
 [226] Biber.pm:972> INFO - Found 10 citekeys in bib section 0
@@ -21,3 +22,26 @@
 [388] Biber.pm:130> WARN - legacy month field 'July' in entry 'ilaks_2020' is not an integer - this will probably not sort properly.
 [388] Biber.pm:130> WARN - legacy month field 'May' in entry 'artley_2022' is not an integer - this will probably not sort properly.
 [388] Biber.pm:132> INFO - WARNINGS: 3
+=======
+[136] biber-darwin:340> INFO - === Thu Mar 23, 2023, 11:08:28
+[185] Biber.pm:418> INFO - Reading 'main.bcf'
+[366] Biber.pm:972> INFO - Found 10 citekeys in bib section 0
+[389] Biber.pm:4383> INFO - Processing section 0
+[411] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[414] bibtex.pm:1713> INFO - LaTeX decoding ...
+[431] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[648] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[648] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[648] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-GB'
+[648] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
+[673] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[673] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[673] Biber.pm:4203> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-GB'
+[673] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
+[693] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[710] bbl.pm:757> INFO - Output to main.bbl
+[710] Biber.pm:130> WARN - legacy month field 'January' in entry 'e24_gasprice_2023' is not an integer - this will probably not sort properly.
+[710] Biber.pm:130> WARN - legacy month field 'July' in entry 'ilaks_2020' is not an integer - this will probably not sort properly.
+[710] Biber.pm:130> WARN - legacy month field 'May' in entry 'artley_2022' is not an integer - this will probably not sort properly.
+[710] Biber.pm:132> INFO - WARNINGS: 3
+>>>>>>> refs/remotes/origin/main
