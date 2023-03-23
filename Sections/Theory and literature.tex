@@ -38,10 +38,10 @@ Combining these three parts of the ARIMA-model, we get the following general for
 \hat{y}_t = c + \phi_1y_{t-1} + \phi_2y_{t-2} + \cdots + \phi_py_{t-p} + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + \cdots + \theta_q\epsilon_{t-q} + \epsilon_t
 \end{equation}
 
-\subsubsection{Seasonality}
+\subsubsection{Seasonality (S)}
 For time-series data there can often incur a seasonal trend which is a pattern that repeats itself over a period of time. For example pollution levels in a city that might increase in the winter and decrease in the summer. This trend can be accounted for by adding a seasonal component to the model and where the ARIMA-model is written as ARIMA$(p,d,q)$, the SARIMA-model is written as SARIMA$(p,d,q) \times (P,D,Q)s$. Uppercase P, D and Q corresponds to the lowercase p, d and q, namely the AR, I and MA terms, but for the seasonal component. The $s$ is the number of periods in a season, for example if the data is measured daily, $s$ would be 7 if the seasonal trend is weekly.~\parencite{chang_et_al_2012}
 
-\subsubsection{Exogenous variables}
+\subsubsection{Exogenous variables (X)}
 
 \subsection{Exploratory analysis}
 \textbf{Exploratory data analysis (EDA)} is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions (https://www.youtube.com/watch?v=QiqZliDXCCg).
