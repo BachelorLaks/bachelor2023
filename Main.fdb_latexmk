@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1679566104 "main.bcf" "main.bbl" "main" 1679566114
-  "main.bcf" 1679566114 164263 346e5cb9bdacd65c31f15884d681bb24 "pdflatex"
+["biber main"] 1679566104 "main.bcf" "main.bbl" "main" 1679566181
+  "main.bcf" 1679566181 164263 346e5cb9bdacd65c31f15884d681bb24 "pdflatex"
   "references.bib" 1679565927 4243 2e8cfcf5faee7a98961c9ec55b964fda ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1679566112 "/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex" "main.pdf" "main" 1679566114
+["pdflatex"] 1679566179 "/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex" "main.pdf" "main" 1679566181
   "/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex" 1679530594 502 deb05b4458ff643a650a31960ce2b07e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -184,11 +184,11 @@
   "Sections/Introduction.tex" 1679530594 3825 3d62ab668b1d8179c5d0d3d270441d8f ""
   "Sections/Methodology.tex" 1679530594 1367 0c79abc69524275893da985aafb99421 ""
   "Sections/Results and discussion.tex" 1677491562 32 d65497e7f6d7659e55c623157ad452f7 ""
-  "Sections/Theory and literature.tex" 1679566104 4045 ba198125148843608c1f6a0f5704381c ""
-  "main.aux" 1679566114 5931 468234f3b9c3562c2dc7647c737c9e15 "pdflatex"
+  "Sections/Theory and literature.tex" 1679566177 4231 62d54ba0ca04c0b9033da4be9406f522 ""
+  "main.aux" 1679566181 5931 3976771f8071d80acffb551aed715969 "pdflatex"
   "main.bbl" 1679566109 34449 ac920611083ac4e09d3723033c1b2e32 "biber main"
-  "main.out" 1679566114 3857 52d0918aebeffd335b3cbdac986c7905 "pdflatex"
-  "main.run.xml" 1679566114 2503 a3673b61af8c3f8090fd14605a3e01d8 "pdflatex"
+  "main.out" 1679566181 3857 52d0918aebeffd335b3cbdac986c7905 "pdflatex"
+  "main.run.xml" 1679566181 2503 a3673b61af8c3f8090fd14605a3e01d8 "pdflatex"
   "main.tex" 1679530594 502 deb05b4458ff643a650a31960ce2b07e ""
   "packages.sty" 1679530594 5304 bb7b65251bb495713f1a66db607dd6c1 ""
   (generated)
