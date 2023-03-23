@@ -1,8 +1,8 @@
-PWD /Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1
+PWD /Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex
+INPUT /Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls

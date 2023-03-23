@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  23 MAR 2023 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.23)  23 MAR 2023 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex
-(/Users/oyvind/Bacheloroppgaver/bachelor2023/bachelor2023-1/main.tex
+**/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex
+(/Users/vrognaas/Library/CloudStorage/OneDrive-NTNU/Bachelor/GIthub/bachelor2023/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -940,12 +940,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  26644 strings out of 478268
- 512304 string characters out of 5846347
+ 512367 string characters out of 5846346
  1386128 words of memory out of 5000000
  44427 multiletter control sequences out of 15000+600000
  497728 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,93p,1509b,4104s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,12n,93p,1530b,4104s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on main.pdf (7 pages, 100091 bytes).
 PDF statistics:
