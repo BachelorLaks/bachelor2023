@@ -8,7 +8,10 @@ Neural networks, especially LSTM compared to other predictive models
 \subsection{Tensor flow}
 
 \subsection{ARIMA --- SARIMAX}
-Formula ARIMA: $$\hat{y'}_t = c + \phi_1y'_{t-1} + \phi_2y'_{t-2} + ... + \phi_py'_{t-p} + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + ... + \theta_q\epsilon_{t-q} + \epsilon_t$$
+Formula ARIMA: 
+\begin{equation}
+\hat{y'}_t = c + \phi_1y'_{t-1} + \phi_2y'_{t-2} + ... + \phi_py'_{t-p} + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + ... + \theta_q\epsilon_{t-q} + \epsilon_t
+\end{equation}
 
 The ARIMA-model is one of the more popular and useful approaches to time series forecasting. The name is an acronym that stands for AutoRegressive Integrated Moving Average and the model utilizes these in order to predict future values solely on earlier values, it is therefore an univariate model. The SARIMAX-model is an extension of the ARIMA-model that also takes external factors and seasonality into account in order to better predict future values. SARIMAX can therefore be a multivariate model. (\cite{hyndman_athanasopoulos_2021})
 
@@ -27,7 +30,10 @@ Where c is a constant, $p$ is the number of lag observations or autoregressive t
 The second part of the ARIMA acronym is the Integrated part. This part of the model is used to make the time series stationary. In the ARIMA-equation it is represented by the letter $d$ and is the number of differencing required to make the time series stationary. Usually the optimal amount of differencing is the least amount needed to make the data fluctuate around a well defined mean. (\cite{nau_2019}) 
 
 \subsubsection{Moving Average (MA)}
-$$\hat{y} = c + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + ... + \theta_q\epsilon_{t-q}$$
+The third and last part of the ARIMA acronym is the Moving Average part.
+\begin{equation}
+\hat{y} = c + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + ... + \theta_q\epsilon_{t-q}
+\end{equation}
 
 \subsection{Exploratory analysis}
 \textbf{Exploratory data analysis (EDA} is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions (https://www.youtube.com/watch?v=QiqZliDXCCg).
