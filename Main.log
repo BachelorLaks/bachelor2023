@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  23 MAR 2023 11:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  23 MAR 2023 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,24 +933,24 @@ Overfull \hbox (14.3577pt too wide) in paragraph at lines 7--8
 
 [5]) (./Sections/Results and discussion.tex) (./Sections/Conclusion.tex) [6] [7] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 17358134A5C419A2F4651693A9E538B8;3343.
+(rerunfilecheck)             Checksum: 52D0918AEBEFFD335B3CBDAC986C7905;3857.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26646 strings out of 478268
- 512334 string characters out of 5846347
+ 26652 strings out of 478268
+ 512444 string characters out of 5846347
  1386128 words of memory out of 5000000
- 44428 multiletter control sequences out of 15000+600000
+ 44431 multiletter control sequences out of 15000+600000
  497728 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,11n,93p,1509b,4104s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 100781 bytes).
+Output written on main.pdf (7 pages, 101310 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
