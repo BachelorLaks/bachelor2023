@@ -31,10 +31,12 @@
 
 % --- Bibliography & References---  
 \usepackage[backend = biber,    % Recommended backend for sorting bibliography
-            style = authoryear-comp,    % Close to the 'Harvard' referencing style
+            style = bath,    % Close to the 'Harvard' referencing style
+            sorting=ynt,    % Sorting by year, then author, then title
             urldate = long,     % Long: 24th Mar. 1997 | Short: 24/03/1997
             maxcitenames = 2,   % Number of authors in cite before replaced with 'Author#1 et al.'
             ]{biblatex}
+\assignrefcontextentries[]{*} % To avoid possible inconsistencies in the bibliography, we assign all entries to all contexts
 \addbibresource{references.bib}     % Adding our file containing the references
 % \addbibresource{reference_2.bib} is possible if we want to add several reference files
 
@@ -106,6 +108,9 @@
 \usepackage[a4paper, total={150mm, 245mm,footskip = 14mm}]{geometry}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.8em}
+\usepackage{setspace}   % Set line spacing  
+\usepackage{mathptmx}   % Set font 
+
 
 % Customized header and footer
 \usepackage{fancyhdr}

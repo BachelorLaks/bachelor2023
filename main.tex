@@ -1,5 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{packages}
+\linespread{1.5} % Line spacing
+
 \begin{document}
 
 
@@ -13,5 +15,11 @@
 \import{./Sections/}{Results and discussion}
 
 \import{./Sections/}{Conclusion}
+
+% Printing bibliography
+\newpage
+\newrefcontext[sorting=nyt]
+\printbibliography[heading = bibintoc, title = Works Cited]
+% 'bibintoc' inserts our bibliography into the table of contents
 
 \end{document}
