@@ -42,6 +42,8 @@ Combining these three parts of the ARIMA-model, we get the following general for
 For time-series data there can often incur a seasonal trend which is a pattern that repeats itself over a period of time. For example pollution levels in a city that might increase in the winter and decrease in the summer. This trend can be accounted for by adding a seasonal component to the model and where the ARIMA-model is written as ARIMA$(p,d,q)$, the SARIMA-model is written as SARIMA$(p,d,q) \times (P,D,Q)s$. Uppercase P, D and Q corresponds to the lowercase p, d and q, namely the AR, I and MA terms, but for the seasonal component. The $s$ is the number of periods in a season, for example if the data is measured daily, $s$ would be 7 if the seasonal trend is weekly.~\parencite{chang_et_al_2012}
 
 \subsubsection{Exogenous variables (X)}
+In addition to adding seasonality to the ARIMA model, one can also include exogenous variables and turn it into a multivariate model. This is often used when there is a clear correlation between the exogenous variable and the time series. For example, if the ARIMA model is used to predict the price of electricity, one could include weather data as one or several exogenous variables.~\parencite{elamin_fukushige_2018}
+
 
 \subsection{Exploratory analysis}
 \textbf{Exploratory data analysis (EDA)} is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions (https://www.youtube.com/watch?v=QiqZliDXCCg).
