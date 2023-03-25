@@ -23,4 +23,21 @@ The next step was to gather data from the other relevant factors for our analysi
 
 \subsection{ARIMA and SARIMAX}
 
+As explained in~\ref{SeasonalityTheory} on page~\pageref{SeasonalityTheory}, one of the prerequisites for the ARIMA model is that the data is stationary. This can be done either by analysing the time-series itself and noticing the variance and trend, or by using the Augmented Dickey-Fuller test. 
+After this is done, the next step will be to find the optimal parameters for the ARIMA model. This is usually done by looking at the ACF and PACF plots. 
+When the optimal parameters are found, the model can be fitted and used to predict future values. \parencite{hyndman_athanasopoulos_2021}
+
+\subsubsection{Stationarity}
+The Augmented Dickey-Fuller test is a statistical test that can be used to determine stationarity. The null hypothesis of the test is that the time-series is non-stationary. If the p-value is less than the significance level, the null hypothesis is rejected and the time-series is expected to be stationary.
+Using the Augmented Dickey-Fuller test on the Salmon Price data, we get a p-value of 0.05651, this means that we cannot reject the null hypothesis at a 95\% confidence level. The data is therefore not stationary.~\parencite{Dickey_Fuller1979}
+
+In order to better understand why the data is not stationary, we can plot the data and look at the variance, trend and seasonality. This is done by decomposing the data into its components. We then get the following plot: 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/Decomposition.png}
+    \caption[Decomposition of the Salmon Price data]{Decomposition of the Salmon Price data.}\label{fig:Decomposition}
+\end{figure}
+Examining the data decomposed there are especially two things that stand out. The first is the trend, which is clearly increasing. The second is the seasonality, there is a clear yearly seasonality where the price is higher in the summer months before decreasing during the autumn and reaching a low in the winter.
+
 \subsection{LSTM --- Tensorflow}

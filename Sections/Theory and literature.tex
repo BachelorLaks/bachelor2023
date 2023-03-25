@@ -13,7 +13,7 @@ The ARIMA-model is one of the more popular and useful approaches to time series 
 
 The SARIMAX-model is an extension of the ARIMA-model that also takes external factors and seasonality into account in order to better predict future values. SARIMAX can therefore be a multivariate model. \parencite{hyndman_athanasopoulos_2021}
 
-\subsubsection{Auto Regressive (AR)}
+\subsubsection{Auto Regressive (AR)}\label{AutoRegressiveTheory}
 The first part of the ARIMA acronym is the Auto Regressive part. Auto comes from the greek word autos and mean self, in this context it means that the model is regressing on itself. This part of the model can be written as follows:
 \begin{equation}
 y_{t} = c + \phi_{1}y_{t-1} + \phi_{2}y_{t-2} + \cdots + \phi_{p}y_{t-p} + \varepsilon_{t}
@@ -25,7 +25,7 @@ Where c is a constant, $p$ is the number of lag observations or autoregressive t
 \subsubsection{Integrated (I)}\label{IntegratedTheory}
 The second part of the ARIMA acronym is the Integrated part. This part of the model is used to make the time series stationary. In the ARIMA-equation it is represented by the letter $d$ and is the number of differencing required to make the time series stationary. Usually the optimal amount of differencing is the least amount needed to make the data fluctuate around a well defined mean. (\cite{nau_2019}) It is the only form of converting the data to a stationary form that the ARIMA-model itself can do. Log-transforming and converting to a percentage change is done before the model is applied on the data. 
 
-\subsubsection{Moving Average (MA)}
+\subsubsection{Moving Average (MA)}\label{MovingAverageTheory}
 The third and last part of the ARIMA acronym is the Moving Average part. This incorporates the dependency of an observation on the residual errors from a moving average model applied to lagged observations. \parencite{hayes_2019} This part of the model can be written as follows:
 \begin{equation}
 \hat{y} = c + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + \cdots + \theta_q\epsilon_{t-q}
@@ -38,10 +38,10 @@ Combining these three parts of the ARIMA-model, we get the following general for
 \hat{y}_t = c + \phi_1y_{t-1} + \phi_2y_{t-2} + \cdots + \phi_py_{t-p} + \theta_1\epsilon_{t-1} + \theta_2\epsilon_{t-2} + \cdots + \theta_q\epsilon_{t-q} + \epsilon_t
 \end{equation}
 
-\subsubsection{Seasonality (S)}
+\subsubsection{Seasonality (S)}\label{SeasonalityTheory}
 For time-series data there can often incur a seasonal trend which is a pattern that repeats itself over a period of time. For example pollution levels in a city that might increase in the winter and decrease in the summer. This trend can be accounted for by adding a seasonal component to the model and where the ARIMA-model is written as ARIMA$(p,d,q)$, the SARIMA-model is written as SARIMA$(p,d,q) \times (P,D,Q)s$. Uppercase P, D and Q corresponds to the lowercase p, d and q, namely the AR, I and MA terms, but for the seasonal component. The $s$ is the number of periods in a season, for example if the data is measured daily, $s$ would be 7 if the seasonal trend is weekly.~\parencite{chang_et_al_2012}
 
-\subsubsection{Exogenous variables (X)}
+\subsubsection{Exogenous variables (X)}\label{ExogenousTheory}
 In addition to adding seasonality to the ARIMA model, one can also include exogenous variables and turn it into a multivariate model. This is often used when there is a clear correlation between the exogenous variable and the time series. For example, if the ARIMA model is used to predict the price of electricity, one could include weather data as one or several exogenous variables.~\parencite{elamin_fukushige_2018}
 
 
