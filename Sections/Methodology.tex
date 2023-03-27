@@ -38,6 +38,8 @@ In order to better understand why the data is not stationary, we can plot the da
     \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/Decomposition.png}
     \caption[Decomposition of the Salmon Price data]{Decomposition of the Salmon Price data.}\label{fig:Decomposition}
 \end{figure}
-Examining the data decomposed there are especially two things that stand out. The first is the trend, which is clearly increasing. The second is the seasonality, there is a clear yearly seasonality where the price is higher in the summer months before decreasing during the autumn and reaching a low in the winter.
+Examining the decomposed data there are especially two things that stand out. The first is the trend, which is clearly increasing. The second is the seasonality, there is a clear yearly seasonal trend where the price is higher in the summer months before decreasing during the autumn and reaching a low in the winter. From this we can draw the same conclusion as the Augmented Dickey-Fuller test, the data is not stationary and needs differencing. In the ARIMA model, this will be done by setting $d$ to 1 or more. 
+
+The exact number of differencing needed can be found either by using the ADF-test on the differenced data and looking for when the p-value is less than the critical value, or by looking at the ACF and PACF plots. 
 
 \subsection{LSTM --- Tensorflow}
