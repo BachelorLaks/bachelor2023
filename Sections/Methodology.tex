@@ -12,7 +12,7 @@ We intend to utilize the following methods:
 In order to analyze data connected to salmon price, we first need to gather this data. 
 The main data point is the price of salmon. There are several sources for this data, but we utilized the data from the NASDAQ salmon exchange.
 The reason for this being a combination of the accessibility of the data, and the fact that the NASDAQ salmon exchange (NQSALMON)
-uses a wighted average for the salmon price, gathered from a spectrum of salmon exporters and it is therefore the best source of meaningful data.
+uses a weighted average for the salmon price, gathered from a spectrum of salmon exporters and it is therefore the best source of meaningful data.
 Another reason for using the NASDAQ salmon exchange is that the data is updated weekly with no missing values for the entire time frame.
 We downloaded data from March 2013 through December 2022, for a total of 507 data points. This was our base for the independent factors.
 
@@ -38,8 +38,16 @@ In order to better understand why the data is not stationary, we can plot the da
     \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/Decomposition.png}
     \caption[Decomposition of the Salmon Price data]{Decomposition of the Salmon Price data.}\label{fig:Decomposition}
 \end{figure}
-Examining the decomposed data there are especially two things that stand out. The first is the trend, which is clearly increasing. The second is the seasonality, there is a clear yearly seasonal trend where the price is higher in the summer months before decreasing during the autumn and reaching a low in the winter. From this we can draw the same conclusion as the Augmented Dickey-Fuller test, the data is not stationary and needs differencing. In the ARIMA model, this will be done by setting $d$ to 1 or more. 
+Examining the decomposed data in Figure~\ref{fig:Decomposition} there are especially two things that stand out. The first is the trend, which is clearly increasing. The second is the seasonality, there is a clear yearly seasonal trend where the price is higher in the summer months before decreasing during the autumn and reaching a low in the winter. From this we can draw the same conclusion as the Augmented Dickey-Fuller test, the data is not stationary and needs differencing. In the ARIMA model, this will be done by setting $d$ to 1 or more. 
 
-The exact number of differencing needed can be found either by using the ADF-test on the differenced data and looking for when the p-value is less than the critical value, or by looking at the ACF and PACF plots. 
+The exact number of differencing needed can be found either by using the ADF-test on the differenced data and looking for when the p-value is less than the critical value, or by looking at the autocorrelation plot and using rules set out by \textcite{nau_2019} to determine the number of differencing needed. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/Diff1_ACF_30.png}
+    \caption[Different orders of differencing]{Different orders of differencing.}\label{fig:ACF_Differencing}
+\end{figure}
+Examining the trend and autocorrelation in Figure~\ref{fig:ACF_Differencing} we can see that the original data without differencing has both a clear trend and a slow decay in the autocorrelation plot with a high number of positive lags. Following the first rule from \textcite{nau_2019} we can conclude that the data needs at least one order of differencing.
+
+After just a single order of differencing, the tends starts to flatten out and fluctuate around 0. The autocorrelation plot also drops sharply after the first lag, and is then quite small and patternless, this follows the second rule from \textcite{nau_2019} and will often be a sign that higher differencing is not needed. 
 
 \subsection{LSTM --- Tensorflow}
