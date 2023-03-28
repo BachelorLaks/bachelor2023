@@ -48,6 +48,15 @@ The exact number of differencing needed can be found either by using the ADF-tes
 \end{figure}
 Examining the trend and autocorrelation in Figure~\ref{fig:ACF_Differencing} we can see that the original data without differencing has both a clear trend and a slow decay in the autocorrelation plot with a high number of positive lags. Following the first rule from \textcite{nau_2019} we can conclude that the data needs at least one order of differencing.
 
-After just a single order of differencing, the tends starts to flatten out and fluctuate around 0. The autocorrelation plot also drops sharply after the first lag, and is then quite small and patternless, this follows the second rule from \textcite{nau_2019} and will often be a sign that higher differencing is not needed. 
+After just a single order of differencing, the tends starts to flatten out and fluctuate around 0. The autocorrelation plot also drops sharply after the first lag, and is then quite small and patternless, this follows the second rule from \textcite{nau_2019} and will often be a sign that higher differencing is not needed. Running the Augmented Dickey-Fuller test on the differenced data, we get a p-value of 2.9705e-24, much lower than the critical value of 0.05. We can therefore reject the null hypothesis and conclude that the differenced data is stationary. 
 
+With a second order of differencing, the trend seems to flatten even more, and the autocorrelation plot shows a sharp negative decline for the first and second lag, this may be a sign that the data is over-differenced. This is not optimal as over-differencing will lead to a loss of historical information and trends. It is therefore of utmost importance to find the order of differencing that both makes the data stationary and keeps the historical memory intact. Over-differencing is a common mistake when fitting non-stationary data to machine learning models, and can lead to the model not being able to capture the underlying trend.~\parencite{lopezde_prado2018}
+
+
+\begin{table}[h]
+    \begin{center}
+        \import{data/Figures/ARIMA/}{StdDevTable}
+        \caption{\label{StdDevTable}Standard deviation of the differenced data.}
+    \end{center}
+\end{table}
 \subsection{LSTM --- Tensorflow}
