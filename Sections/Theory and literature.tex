@@ -23,7 +23,7 @@ Where c is a constant, $p$ is the number of lag observations or autoregressive t
 
 
 \subsubsection{Integrated (I)}\label{IntegratedTheory}
-The second part of the ARIMA acronym is the Integrated part. This part of the model is used to make the time series stationary. In the ARIMA-equation it is represented by the letter $d$ and is the number of differencing required to make the time series stationary. Usually the optimal amount of differencing is the least amount needed to make the data fluctuate around a well defined mean. (\cite{nau_2019}) It is the only form of converting the data to a stationary form that the ARIMA-model itself can do. Log-transforming and converting to a percentage change is done before the model is applied on the data. 
+The second part of the ARIMA acronym is the Integrated part. This part of the model is used to make the time series stationary. In the ARIMA-equation it is represented by the letter $d$ and is the number of differencing required to make the time series stationary. Usually the optimal amount of differencing is the least amount needed to make the data fluctuate around a well defined mean. (\cite{nau_2019}) It is the only form of converting the data to a stationary form that the ARIMA-model itself can do. Log-transforming and converting to a percentage change can only be done before the model is applied on the data. 
 
 \subsubsection{Moving Average (MA)}\label{MovingAverageTheory}
 The third and last part of the ARIMA acronym is the Moving Average part. This incorporates the dependency of an observation on the residual errors from a moving average model applied to lagged observations. \parencite{hayes_2019} This part of the model can be written as follows:

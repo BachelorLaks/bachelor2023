@@ -27,7 +27,7 @@ As explained in~\ref{SeasonalityTheory} on page~\pageref{SeasonalityTheory}, one
 After this is done, the next step will be to find the optimal parameters for the ARIMA model. This is usually done by looking at the ACF and PACF plots. 
 When the optimal parameters are found, the model can be fitted and used to predict future values. \parencite{hyndman_athanasopoulos_2021}
 
-\subsubsection{Stationarity}
+\subsubsection{Determening stationarity}
 The Augmented Dickey-Fuller test is a statistical test that can be used to determine stationarity. The null hypothesis of the test is that the time-series is non-stationary. If the p-value is less than the significance level, the null hypothesis is rejected and the time-series is expected to be stationary.
 Using the Augmented Dickey-Fuller test on the Salmon Price data, we get a p-value of 0.05651, this means that we cannot reject the null hypothesis at a 95\% confidence level. The data is therefore not stationary.~\parencite{Dickey_Fuller1979}
 
@@ -52,6 +52,7 @@ After just a single order of differencing, the tends starts to flatten out and f
 
 With a second order of differencing, the trend seems to flatten even more, and the autocorrelation plot shows a sharp negative decline for the first and second lag, this may be a sign that the data is over-differenced. This is not optimal as over-differencing will lead to a loss of historical information and trends. It is therefore of utmost importance to find the order of differencing that both makes the data stationary and keeps the historical memory intact. Over-differencing is a common mistake when fitting non-stationary data to machine learning models, and can lead to the model not being able to capture the underlying trend.~\parencite{lopezde_prado2018}
 
+A third way to determine the optimal number of differencing is, according to \textcite{nau_2019}, to look at the standard deviation of the plot at different orders of differencing. Following his rule number 3, the optimal number of differencing is the one where the standard deviation of the plot is the lowest. Examining Table~\ref{StdDevTable} we can see that the standard deviation of the data is lowest at the first order of differencing. After this the standard deviation increases, and there is no reason to believe any higher number of differencing will reduce the standard deviation. 
 
 \begin{table}[h]
     \begin{center}
@@ -59,4 +60,18 @@ With a second order of differencing, the trend seems to flatten even more, and t
         \caption{\label{StdDevTable}Standard deviation of the differenced data.}
     \end{center}
 \end{table}
+
+We can therefore conclude that the optimal number of differencing should be 1.
+
+\subsubsection{Autoregression and Moving Average}
+The next step in a regular ARIMA model is to identify the optimal AR and MA terms needed to fit the model. This can be done by comparing different models by looking at the AIC and BIC values, but with larger models this would constitute an unnecessary use of computational power. The more efficient way to find the optimal terms is to look at the ACF and PACF plots of the differenced data and use the rules set out by \textcite{nau_2019} to determine the optimal terms. 
+%data/Figures/ARIMA/DiffACF-PACF_30.png
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/DiffACF-PACF_30.png}
+    \caption[ACF and PACF plots of the differenced data]{ACF and PACF plots of the differenced data.}\label{fig:ACF_PACF}
+\end{figure}
+
+
+
 \subsection{LSTM --- Tensorflow}
