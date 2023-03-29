@@ -89,3 +89,15 @@ Since the tanh activation function is used the outputs of this neural network wi
 This new memory vector does not actually take into account weather the input data is worth remembering. 
 Therefore the input gate is a sigmoid activated network which filters which components of the new memory vector are worth retaining. 
 The output of the new memory vector and the input gate is then multiplied, and the combined vector is added to the cell state. 
+\subsubsection{Sigmoid function}
+\begin{equation}
+    S(x) = \frac{e^x}{e^x+1}
+\end{equation}
+Since: 
+\begin{equation}
+    S(x) = \frac{e^2}{x^2+1}
+\end{equation}
+\subsubsection{Hyperbolic tangent function}
+\begin{equation}
+    S(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^x-e^{-x}}{e^x+e^{-x}}
+\end{equation}
