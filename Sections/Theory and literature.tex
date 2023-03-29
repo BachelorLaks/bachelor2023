@@ -74,4 +74,18 @@ By adding a "feedback loop" RNNs are able to step through sequential input data 
 
 
 BILDE
-\subsubsection{Long Short-Term Memory}
+\subsubsection{Long Short-Term Memory} 
+Long Short-Term Memory (LSTM) is a network specifically designed to overcome the long-term dependency problem faced by RNNs. 
+A typical LSTM network consists of three gates; the input gate, the forget gate and the output gate.
+These gates control how the information in a sequence of data comes into, is stored and leaves the network.  
+
+The forget gate will decide which bits of the cell state are useful, given both the previous hidden state and the new input data. 
+This is done by feeding the previous hidden state and the new input data into a neural network, which uses the sigmoid activation to output a number between 0 and 1, where 0 means "forget" and 1 means "remember". 
+The output of the forget gate is then multiplied with the previous cell state. Intuitively an output value of close to 0 means that the cell state will have less influence on the following steps. 
+
+The input gate (and new memory network) will determine what information should be added to the networks cell state, given the previous hidden state and new input data. The inputs in this gate are the same as in the forget gate. 
+Here there is created a neural network with a tanh activation function, to combine the previous hidden state and the new input data and generate a "new memory update vector". This vector decides how much to update each component of the cell state of the network, given the data. 
+Since the tanh activation function is used the outputs of this neural network will be between -1 and 1. 
+This new memory vector does not actually take into account weather the input data is worth remembering. 
+Therefore the input gate is a sigmoid activated network which filters which components of the new memory vector are worth retaining. 
+The output of the new memory vector and the input gate is then multiplied, and the combined vector is added to the cell state. 
