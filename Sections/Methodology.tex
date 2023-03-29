@@ -27,7 +27,7 @@ As explained in~\ref{SeasonalityTheory} on page~\pageref{SeasonalityTheory}, one
 After this is done, the next step will be to find the optimal parameters for the ARIMA model. This is usually done by looking at the ACF and PACF plots. 
 When the optimal parameters are found, the model can be fitted and used to predict future values. \parencite{hyndman_athanasopoulos_2021}
 
-\subsubsection{Determening stationarity}
+\subsubsection{Determening stationarity}\label{DeterminingStationarity}
 The Augmented Dickey-Fuller test is a statistical test that can be used to determine stationarity. The null hypothesis of the test is that the time-series is non-stationary. If the p-value is less than the significance level, the null hypothesis is rejected and the time-series is expected to be stationary.
 Using the Augmented Dickey-Fuller test on the Salmon Price data, we get a p-value of 0.05651, this means that we cannot reject the null hypothesis at a 95\% confidence level. The data is therefore not stationary.~\parencite{Dickey_Fuller1979}
 
@@ -64,14 +64,19 @@ A third way to determine the optimal number of differencing is, according to \te
 We can therefore conclude that the optimal number of differencing should be 1.
 
 \subsubsection{Autoregression and Moving Average}
-The next step in a regular ARIMA model is to identify the optimal AR and MA terms needed to fit the model. This can be done by comparing different models by looking at the AIC and BIC values, but with larger models this would constitute an unnecessary use of computational power. The more efficient way to find the optimal terms is to look at the ACF and PACF plots of the differenced data and use the rules set out by \textcite{nau_2019} to determine the optimal terms. 
-%data/Figures/ARIMA/DiffACF-PACF_30.png
+The next step in a regular ARIMA model is to identify the optimal AR and MA terms needed to fit the model. This can be done by comparing different models by looking at the AIC and BIC values, but with larger models this would constitute an unnecessary use of computational power. A more efficient way to find the optimal terms is to look at the ACF and PACF plots of the data and use the rules set out by \textcite{nau_2019} to determine the optimal $p$ and $q$. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/OrigACF-PACF_30.png}
+    \caption[ACF and PACF plots of Salmon price]{ACF and PACF plots of Salmon price.}\label{fig:Orig_ACF_PACF}
+\end{figure}
+
+The most noticeable part of the ACF plot in Figure~\ref{fig:Orig_ACF_PACF} is the slow decline of the autocorrelation after the first lag. This is a sign that the data is not white noise, and that there is a correlation between the data and its lags. According to \textcite{nau_2019}, this is called an `AR signature' and is a clear sign that we need to add an AR term to the model, rather than adding an MA term. To find the optimal amount of AR terms needed we can look at the PACF plot. As a rule of thumb, the optimal number is where the PACF plot exhibits a clear drop. In Figure~\ref{fig:Orig_ACF_PACF} we can see that the PACF plot drops sharply after the lag 1, and then fluctuates around 0, mostly within the confidence interval. Therefore, without any differencing, the optimal number of AR terms is 1. But, as we concluded in~\ref{DeterminingStationarity}, the data needs at least one order of differencing. We therefore need to look at the ACF and PACF plots of the differenced data.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/DiffACF-PACF_30.png}
-    \caption[ACF and PACF plots of the differenced data]{ACF and PACF plots of the differenced data.}\label{fig:ACF_PACF}
+    \caption[ACF and PACF plots of differenced Salmon price]{ACF and PACF plots of differenced Salmon price.}\label{fig:Diff1_ACF_PACF}
 \end{figure}
-
 
 
 \subsection{LSTM --- Tensorflow}
