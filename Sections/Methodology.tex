@@ -21,6 +21,8 @@ The next step was to gather data from the other relevant factors for our analysi
 
 \subsection{Exploratory analysis}
 
+\subsection{Data preprocessing}
+In order to use the data for prediction in our models we need to prepare the data. In our case this means to split the data into a training and test set. We will use the same split for all of our models, so that we they are comparable. The test set will be the last year of the data, 2021. The training set will be the rest of the data, 2013--2020. A very important aspect of forecasting using machine learning algorithms is that the test set should be `invisible' throughout the training process, otherwise we might get data leakage and consequently, a false sense of how well the model performs.~\parencite{brownlee_2016}
 \subsection{ARIMA and SARIMAX}
 
 As explained in~\ref{SeasonalityTheory} on page~\pageref{SeasonalityTheory}, one of the prerequisites for the ARIMA model is that the data is stationary. This can be done either by analysing the time-series itself and noticing the variance and trend, or by using the Augmented Dickey-Fuller test. 
@@ -29,7 +31,7 @@ When the optimal parameters are found, the model can be fitted and used to predi
 
 \subsubsection{Determening stationarity}\label{DeterminingStationarity}
 The Augmented Dickey-Fuller test is a statistical test that can be used to determine stationarity. The null hypothesis of the test is that the time-series is non-stationary. If the p-value is less than the significance level, the null hypothesis is rejected and the time-series is expected to be stationary.
-Using the Augmented Dickey-Fuller test on the Salmon Price data, we get a p-value of 0.05651, this means that we cannot reject the null hypothesis at a 95\% confidence level. The data is therefore not stationary.~\parencite{Dickey_Fuller1979}
+Using the Augmented Dickey-Fuller test on the Salmon Price data, we get a p-value of 0.02406, this means that we can reject the null hypothesis at a 95\% confidence level according to this test. The data may therefore be stationary.~\parencite{Dickey_Fuller1979}
 
 In order to better understand why the data is not stationary, we can plot the data and look at the variance, trend and seasonality. This is done by decomposing the data into its components. We then get the following plot: 
 
@@ -38,7 +40,7 @@ In order to better understand why the data is not stationary, we can plot the da
     \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/Decomposition.png}
     \caption[Decomposition of the Salmon Price data]{Decomposition of the Salmon Price data.}\label{fig:Decomposition}
 \end{figure}
-Examining the decomposed data in Figure~\ref{fig:Decomposition} there are especially two things that stand out. The first is the trend, which is clearly increasing. The second is the seasonality, there is a clear yearly seasonal trend where the price is higher in the summer months before decreasing during the autumn and reaching a low in the winter. From this we can draw the same conclusion as the Augmented Dickey-Fuller test, the data is not stationary and needs differencing. In the ARIMA model, this will be done by setting $d$ to 1 or more. 
+Examining the decomposed data in Figure~\ref{fig:Decomposition} there are especially two things that stand out. The first is the trend, which is clearly increasing. The second is the seasonality, there is a clear yearly seasonal trend where the price is higher in the summer months before decreasing during the autumn and reaching a low in the winter. From this we draw a different conclusion than the Augmented Dickey-Fuller test, according to the plot, the data is not stationary and needs differencing. In the ARIMA model, this will be done by setting $d$ to 1 or more. 
 
 The exact number of differencing needed can be found either by using the ADF-test on the differenced data and looking for when the p-value is less than the critical value, or by looking at the autocorrelation plot and using rules set out by \textcite{nau_2019} to determine the number of differencing needed. 
 \begin{figure}[H]
@@ -48,20 +50,20 @@ The exact number of differencing needed can be found either by using the ADF-tes
 \end{figure}
 Examining the trend and autocorrelation in Figure~\ref{fig:ACF_Differencing} we can see that the original data without differencing has both a clear trend and a slow decay in the autocorrelation plot with a high number of positive lags. Following the first rule from \textcite{nau_2019} we can conclude that the data needs at least one order of differencing.
 
-After just a single order of differencing, the tends starts to flatten out and fluctuate around 0. The autocorrelation plot also drops sharply after the first lag, and is then quite small and patternless, this follows the second rule from \textcite{nau_2019} and will often be a sign that higher differencing is not needed. Running the Augmented Dickey-Fuller test on the differenced data, we get a p-value of 2.9705e-24, much lower than the critical value of 0.05. We can therefore reject the null hypothesis and conclude that the differenced data is stationary. 
+After just a single order of differencing, the tends starts to flatten out and fluctuate around 0. The autocorrelation plot also drops sharply after the first lag, and is then quite small and patternless, this follows the second rule from \textcite{nau_2019} and will often be a sign that higher differencing is not needed. Running the Augmented Dickey-Fuller test on the differenced data, we get a p-value of 3.86388e-24, much lower than the critical value of 0.05. We can therefore reject the null hypothesis and conclude that the differenced data is stationary. 
 
 With a second order of differencing, the trend seems to flatten even more, and the autocorrelation plot shows a sharp negative decline for the first and second lag, this may be a sign that the data is over-differenced. This is not optimal as over-differencing will lead to a loss of historical information and trends. It is therefore of utmost importance to find the order of differencing that both makes the data stationary and keeps the historical memory intact. Over-differencing is a common mistake when fitting non-stationary data to machine learning models, and can lead to the model not being able to capture the underlying trend.~\parencite{lopezde_prado2018}
 
 A third way to determine the optimal number of differencing is, according to \textcite{nau_2019}, to look at the standard deviation of the plot at different orders of differencing. Following his rule number 3, the optimal number of differencing is the one where the standard deviation of the plot is the lowest. Examining Table~\ref{StdDevTable} we can see that the standard deviation of the data is lowest at the first order of differencing. After this the standard deviation increases, and there is no reason to believe any higher number of differencing will reduce the standard deviation. 
 
-\begin{table}[h]
+\begin{table}[H]
     \begin{center}
         \import{data/Figures/ARIMA/}{StdDevTable}
         \caption{\label{StdDevTable}Standard deviation of the differenced data.}
     \end{center}
 \end{table}
 
-We can therefore conclude that the optimal number of differencing should be 1.
+We can therefore conclude that the optimal number of differencing should be either 0 or 1.
 
 \subsubsection{Autoregression and Moving Average}
 The next step in a regular ARIMA model is to identify the optimal AR and MA terms needed to fit the model. This can be done by comparing different models by looking at the AIC and BIC values, but with larger models this would constitute an unnecessary use of computational power. A more efficient way to find the optimal terms is to look at the ACF and PACF plots of the data and use the rules set out by \textcite{nau_2019} to determine the optimal $p$ and $q$. 
@@ -78,5 +80,8 @@ The most noticeable part of the ACF plot in Figure~\ref{fig:Orig_ACF_PACF} is th
     \caption[ACF and PACF plots of differenced Salmon price]{ACF and PACF plots of differenced Salmon price.}\label{fig:Diff1_ACF_PACF}
 \end{figure}
 
+Examining the ACF plot in Figure~\ref{fig:Diff1_ACF_PACF} we can see that the autocorrelation now has a much more rapid decline compared to the original data. The PACF plot exhibits some of the same characteristics as the original data, but with a much sharper decline for the first lag. Nevertheless, as the first lag of both the ACF and PACF plot is positive and significant outside the 95\% confidence interval, there should be at least one AR term. At the same time, there is also some negative lags in both the ACF and PACF plots which may indicate that there should be an MA term, but according to \textcite{nau_2019}, we should be careful mixing AR and MA terms in ARIMA models, as they may cancel each other out. The best model will, in most cases, consist solely of either AR or MA terms.
+
+As the interpretation of visual plots and clues from these can be a bit subjective, we should employ some objective test to determine the optimal number of $p$ and $q$. The most straight forward way to do this is to perform an iterative search over the possible values of $p$ and $q$ and then compare the AIC and BIC values of the different models, as well as comparing the mean squared error of the predictions.  
 
 \subsection{LSTM --- Tensorflow}
