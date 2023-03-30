@@ -75,8 +75,11 @@ https://www.investopedia.com/terms/r/regression.asp
 A recurrent neural network (RNN) is a special type of artificial neural network adapted for work with time series data or data that involves sequences (https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/). 
 By adding a "feedback loop" RNNs are able to step through sequential input data while persisting the state of nodes in the hidden layer between steps. This is called "working memory". The hidden node concatenates its current input and the working memory from the previous steps, before the result is passed on to an activation function. The output from the activation function is then sent onwards to both the output layer, and forwarded on to the next iteration of the RNN (as the working memory)  (https://www.bouvet.no/bouvet-deler/explaining-recurrent-neural-networks).
 
-
-BILDE
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/Neural networks/RNN.png}
+    \caption[Unrolled recurrent neural network]{An unrolled recurrent neural network.}\label{fig:Decomposition}
+\end{figure}
 \subsubsection{Long Short-Term Memory} 
 Long Short-Term Memory (LSTM) is a network specifically designed to overcome the long-term dependency problem faced by RNNs. 
 A typical LSTM network consists of three gates; the input gate, the forget gate and the output gate.
@@ -101,8 +104,8 @@ When this is done the output from the output gate and the squished cell state ar
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{data/Figures/LSTM/LSTM.png}
-    \caption[Unrolled recurrent neural network]{An unrolled recurrent neural network.}\label{fig:Decomposition}
+    \includegraphics[width=0.8\textwidth]{data/Figures/Neural networks/lstm.png}
+    \caption[Long Short-Term Memory]{Long Short-Term Memory.}\label{fig:Decomposition}
 \end{figure}
 
 https://towardsdatascience.com/lstm-networks-a-detailed-explanation-8fae6aefc7f9
