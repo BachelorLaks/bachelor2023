@@ -83,12 +83,18 @@ The forget gate will decide which bits of the cell state are useful, given both 
 This is done by feeding the previous hidden state and the new input data into a neural network, which uses the sigmoid activation to output a number between 0 and 1, where 0 means "forget" and 1 means "remember". 
 The output of the forget gate is then multiplied with the previous cell state. Intuitively an output value of close to 0 means that the cell state will have less influence on the following steps. 
 
-The input gate (and new memory network) will determine what information should be added to the networks cell state, given the previous hidden state and new input data. The inputs in this gate are the same as in the forget gate. 
+The input gate and new memory network will determine what information should be added to the networks cell state, given the previous hidden state and new input data. The inputs in this gate are the same as in the forget gate. 
 Here there is created a neural network with a tanh activation function, to combine the previous hidden state and the new input data and generate a "new memory update vector". This vector decides how much to update each component of the cell state of the network, given the data. 
 Since the tanh activation function is used the outputs of this neural network will be between -1 and 1. 
 This new memory vector does not actually take into account weather the input data is worth remembering. 
 Therefore the input gate is a sigmoid activated network which filters which components of the new memory vector are worth retaining. 
 The output of the new memory vector and the input gate is then multiplied, and the combined vector is added to the cell state. 
+
+The output gate uses the newly updated cell state, the previous hidden state and the new input data to decide the new hidden state. 
+The inputs in the output gate are the previous hidden state and the new input data, and this is fed into a sigmoid activated neural network. 
+This works as a filter, so that the output gate doesn't simply output everything it knows about something, and instead only outputs the most relevant information. 
+Before this output can be used as the new hidden state, the cell state has to be passed through a tanh activation function, in order to force the values to be between -1 and 1 (so called "squished cell state"). 
+When this is done the output from the output gate and the squished cell state are then multiplied. This outputs the new hidden state.  
 \subsubsection{Sigmoid function}
 \begin{equation}
     S(x) = \frac{e^x}{e^x+1}
