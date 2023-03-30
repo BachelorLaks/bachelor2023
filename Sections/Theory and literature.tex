@@ -95,6 +95,7 @@ The inputs in the output gate are the previous hidden state and the new input da
 This works as a filter, so that the output gate doesn't simply output everything it knows about something, and instead only outputs the most relevant information. 
 Before this output can be used as the new hidden state, the cell state has to be passed through a tanh activation function, in order to force the values to be between -1 and 1 (so called "squished cell state"). 
 When this is done the output from the output gate and the squished cell state are then multiplied. This outputs the new hidden state.  
+https://towardsdatascience.com/lstm-networks-a-detailed-explanation-8fae6aefc7f9
 \subsubsection{Sigmoid function}
 \begin{equation}
     S(x) = \frac{e^x}{e^x+1}
