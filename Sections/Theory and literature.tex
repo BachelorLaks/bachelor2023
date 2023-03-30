@@ -62,7 +62,11 @@ Regression analysis is a reliable method of identifying which variables have imp
 
 Linear regression models often use a "least-squares approach" to determine a line of best fit (regression line) to a given dataset. This line is the yellow line in the figure below. A square is the squared distance between a datapoint and the regression line. These values needs to be squared in order to not counteract each other.   
 
-BILDE
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/Regression/regression.jpeg}
+    \caption[Depiction of a regression analysis]{Depiction of a regression analysis.}\label{fig:Regression}
+\end{figure}
 
 When the process above has been completed a regression model is constructed. The genereal form of a \textbf{multiple linear regression model} is:  
 
@@ -78,7 +82,7 @@ By adding a "feedback loop" RNNs are able to step through sequential input data 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{data/Figures/Neural networks/RNN.png}
-    \caption[Unrolled recurrent neural network]{An unrolled recurrent neural network.}\label{fig:Decomposition}
+    \caption[Depiction of an unrolled recurrent neural network]{Depiction of an unrolled recurrent neural network.}\label{fig:RNN}
 \end{figure}
 \subsubsection{Long Short-Term Memory} 
 Long Short-Term Memory (LSTM) is a network specifically designed to overcome the long-term dependency problem faced by RNNs. 
@@ -105,7 +109,7 @@ When this is done the output from the output gate and the squished cell state ar
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{data/Figures/Neural networks/lstm.png}
-    \caption[Long Short-Term Memory]{Long Short-Term Memory.}\label{fig:Decomposition}
+    \caption[Long Short-Term Memory network]{Depiction of a LSTM network.}\label{fig:LSTM}
 \end{figure}
 
 https://towardsdatascience.com/lstm-networks-a-detailed-explanation-8fae6aefc7f9
