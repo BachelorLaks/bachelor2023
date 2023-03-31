@@ -82,9 +82,17 @@ The most noticeable part of the ACF plot in Figure~\ref{fig:Orig_ACF_PACF} is th
 
 Examining the ACF plot in Figure~\ref{fig:Diff1_ACF_PACF} we can see that the autocorrelation now has a much more rapid decline compared to the original data. The PACF plot exhibits some of the same characteristics as the original data, but with a much sharper decline for the first lag. Nevertheless, as the first lag of both the ACF and PACF plot is positive and significant outside the 95\% confidence interval, there should be at least one AR term. At the same time, there is also some negative lags in both the ACF and PACF plots which may indicate that there should be an MA term, but according to \textcite{nau_2019}, we should be careful mixing AR and MA terms in ARIMA models, as they may cancel each other out. The best model will, in most cases, consist solely of either AR or MA terms.
 
-As the interpretation of visual plots and clues from these can be a bit subjective, we should employ some objective test to determine the optimal number of $p$ and $q$. The most straight forward way to do this is to perform an iterative search over the possible values of $p$ and $q$ and then compare the AIC and BIC values of the different models, as well as comparing the mean squared error of the predictions.  
+As the interpretation of visual plots and clues from these can be a bit subjective, we should employ some objective test to determine the optimal number of $p$ and $q$. The most straight forward way to do this is to perform an iterative search over the possible values of $p$ and $q$ and then compare the AIC and BIC values of the different models, as well as comparing the mean squared error of the predictions from the models.  
 
 \subsubsection{Seasonality}
+Hitherto we have only considered the non-seasonal ARIMA model, but as with many time series, the Salmon price might also exhibit some seasonal patterns. One way to determine this is to look at the seasonal part of the decomposed data. The decomposed data shows us what part of the variation in the data is due to the trend, the seasonal part, and the residual part.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/SeasonalDecompose.png}
+    \caption[Seasonal part of the decomposed data]{Seasonal part of the decomposed data}\label{fig:SeasonalDecompose}
+\end{figure}
+
+Examining Figure~\ref{fig:SeasonalDecompose} we can see a clear seasonal trend which seems to be repeating itself every 12 months.
 
 \subsubsection{Exogenous Variables}
 \subsection{LSTM --- Tensorflow}
