@@ -85,14 +85,16 @@ Examining the ACF plot in Figure~\ref{fig:Diff1_ACF_PACF} we can see that the au
 As the interpretation of visual plots and clues from these can be a bit subjective, we should employ some objective test to determine the optimal number of $p$ and $q$. The most straight forward way to do this is to perform an iterative search over the possible values of $p$ and $q$ and then compare the AIC and BIC values of the different models, as well as comparing the mean squared error of the predictions from the models.  
 
 \subsubsection{Seasonality}
-Hitherto we have only considered the non-seasonal ARIMA model, but as with many time series, the Salmon price might also exhibit some seasonal patterns. One way to determine this is to look at the seasonal part of the decomposed data. The decomposed data shows us what part of the variation in the data is due to the trend, the seasonal part, and the residual part.
+Hitherto we have only considered the non-seasonal ARIMA model, but as with many time series, the Salmon price might also exhibit some seasonal patterns and trends. It may therefore be better to add a seasonal part to the model and consequently call it a SARIMA model. One way to determine this is to look at the seasonal part of the decomposed data. The decomposed data shows us what part of the variation in the data is due to the trend, the seasonal part, and the residual part.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/SeasonalDecompose.png}
     \caption[Seasonal part of the decomposed data]{Seasonal part of the decomposed data}\label{fig:SeasonalDecompose}
 \end{figure}
 
-Examining Figure~\ref{fig:SeasonalDecompose} we can see a clear seasonal trend which seems to be repeating itself every 12 months.
+Examining Figure~\ref{fig:SeasonalDecompose} we can see a clear seasonal trend which seems to be repeating itself every 12 months. This could indicate that we should add a seasonal part to the model. As the data is recorded weekly, the $s$ should be 52. \textcite{hyndman_athanasopoulos_2021} mentions that working with weekly data can prove difficult for the ARIMA model to handle as there are, on average, 52.18 weeks in a year, which is not an integer. Nevertheless, we will try to fit a SARIMA model with $s=52$ and compare the AIC and mean squared error of the predictions to the non-seasonal ARIMA model. 
+
+The seasonal part of the ARIMA model also contains $PDQ$ which corresponds to the $pdq$ in the non-seasonal ARIMA model in that they describe the number of seasonal autoregressive terms, the number of seasonal differences, and the number of seasonal moving average terms. In order to determine these terms, we can use the same method as we did for the non-seasonal ARIMA model, namely examine the ACF and PACF plots, but this time for the seasonally differenced data. We could also perform a grid search for the different combinations of AR and MA terms, and in that way obtain the optimal model.
 
 \subsubsection{Exogenous Variables}
 \subsection{LSTM --- Tensorflow}
