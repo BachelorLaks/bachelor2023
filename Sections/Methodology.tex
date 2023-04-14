@@ -101,5 +101,4 @@ The seasonal part of the ARIMA model also contains $PDQ$ which corresponds to th
 One last way to expand on the ARIMA model in order to make it more accurate is to include one or more exogenous variables. This is especially useful if there is some external data that might affect the time series. In our case we suspected that the price of Salmon might be affected by the price of other seafood, as well as the Norwegian Krone. We therefore decided to add these to our dataset and see if it would improve the accuracy of the model.
 
 In order to measure the accuracy of these exogenous variables, we can follow the same procedure as before and compare both the AIC of different models as well as the root mean squared error of the predictions. Comparing the RMSE will probably prove to be a more accurate way of examining the accuracy of the models as AIC cannot handle different levels of differencing and will not work well to compare ARIMA with Tensorflow.~\parencite{brownlee_2017}
-\subsection{LSTM --- Tensorflow}
-
+\subsection{LSTM --- Tensorflow}\label{Tensorflow_Methodology}
