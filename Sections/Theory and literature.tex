@@ -115,6 +115,7 @@ When this is done the output from the output gate and the squished cell state ar
 
 https://towardsdatascience.com/lstm-networks-a-detailed-explanation-8fae6aefc7f9
 \subsubsection{Sigmoid function}
+The Sigmoid function is given as:
 \begin{equation}
     S(x) = \frac{e^x}{e^x+1}
 \end{equation}
@@ -127,9 +128,18 @@ Since:
 \end{equation}
 The Sigmoid function will only output values between 0 and 1. 
 \subsubsection{Hyperbolic tangent function}
+The Hyperbolic tangent function is given as:
 \begin{equation}
     S(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^x-e^{-x}}{e^x+e^{-x}}
 \end{equation}
+Since:
+\begin{equation}
+    \lim_{x \to \infty}tanh(x) = \frac{\infty - 0}{\infty + 0} = \frac{\infty}{\infty} = 1
+\end{equation}
+\begin{equation}
+    \lim_{x \to -\infty}tanh(x) = \frac{0 - \infty}{0 + \infty} = \frac{-\infty}{\infty} = -1
+\end{equation}
+The Hyperbolic tangent function will only output values between -1 and 1.
 
 \subsection{Economic Theory}
 \subsubsection{Consumer choice theory}
