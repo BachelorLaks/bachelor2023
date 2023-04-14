@@ -58,7 +58,7 @@ Univariate analysis is analysis the data of only one variable. This is usually d
 Bivariate analysis uses the data of two variables and compares them to each other. This establishes the correlation (or lack of) between the two variables. This is usually done by creating a correlation matrix or by plotting the data in a scatterplot. 
 
 \subsection{Regression}
-Regression analysis is a reliable method of identifying which variables have impact on a topic of interest. Regression analysis consists of two types of variables; dependent and independent. The dependent variable is the main variable or factor that aasdasd is trying to predict or understand. The independent variables are the factors that dasdasd hypothesize to have an impact on the chosen dependent variable. 
+Regression analysis is a reliable method of identifying which variables have impact on a topic of interest. Regression analysis consists of two types of variables; dependent and independent. The dependent variable is the main variable or factor that the model is trying to predict or understand. The independent variables are the factors that is hypothesized to have an impact on the chosen dependent variable. 
 
 Linear regression models often use a "least-squares approach" to determine a line of best fit (regression line) to a given dataset. This line is the yellow line in the figure below. A square is the squared distance between a datapoint and the regression line. These values needs to be squared in order to not counteract each other.   
 
@@ -69,6 +69,10 @@ Linear regression models often use a "least-squares approach" to determine a lin
 \end{figure}
 
 When the process above has been completed a regression model is constructed. The genereal form of a \textbf{multiple linear regression model} is:  
+\begin{equation}
+    Y = a + b_1X_1 + b_2X_2 + b_3X_3 + ... + b_tX_t + u
+\end{equation}
+Where Y is the dependent variable, X is the independent variable(s), a is the y-intercept, b is the slope of the explanatory variable(s) and u is the residual or error term.     
 
 \subsection{Neural networks}
 \subsubsection{Recurrent Neural Network}
