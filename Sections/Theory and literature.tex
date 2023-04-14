@@ -49,7 +49,7 @@ In addition to adding seasonality to the ARIMA model, one can also include exoge
 
 
 \subsection{Exploratory analysis}
-Exploratory data analysis (EDA) is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions (https://www.youtube.com/watch?v=QiqZliDXCCg). 
+Exploratory data analysis (EDA) is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions. 
 
 There are 4 steps involved in an exploratory data analysis: data collection, data cleaning, univariate analysis and bivariate analysis. 
 Data collection simply consists of gathering the data needed for the analysis. 
@@ -58,7 +58,7 @@ Univariate analysis is analysis the data of only one variable. This is usually d
 Bivariate analysis uses the data of two variables and compares them to each other. This establishes the correlation (or lack of) between the two variables. This is usually done by creating a correlation matrix or by plotting the data in a scatterplot. 
 
 \subsection{Regression}
-Regression analysis is a reliable method of identifying which variables have impact on a topic of interest. Regression analysis consists of two types of variables; dependent and independent. The dependent variable is the main variable or factor that aasdasd is trying to predict or understand. The independent variables are the factors that dasdasd hypothesize to have an impact on the chosen dependent variable. 
+Regression analysis is a reliable method of identifying which variables have impact on a topic of interest. Regression analysis consists of two types of variables; dependent and independent. The dependent variable is the main variable or factor that the model is trying to predict or understand. The independent variables are the factors that is hypothesized to have an impact on the chosen dependent variable. 
 
 Linear regression models often use a "least-squares approach" to determine a line of best fit (regression line) to a given dataset. This line is the yellow line in the figure below. A square is the squared distance between a datapoint and the regression line. These values needs to be squared in order to not counteract each other.   
 
@@ -68,11 +68,11 @@ Linear regression models often use a "least-squares approach" to determine a lin
     \caption[Depiction of a regression analysis]{Depiction of a regression analysis.~\cite{hyndman_athanasopoulos_2021}}\label{fig:Regression}
 \end{figure}
 
-When the process above has been completed a regression model is constructed. The genereal form of a \textbf{multiple linear regression model} is:  
-
-- Regression, https://www.alchemer.com/resources/blog/regression-analysis/\\ 
-
-https://www.investopedia.com/terms/r/regression.asp
+When the process above has been completed a regression model is constructed. The genereal form of a multiple linear regression model is:  
+\begin{equation}
+    Y = a + b_1X_1 + b_2X_2 + b_3X_3 + ... + b_tX_t + u
+\end{equation}
+Where Y is the dependent variable, X is the independent variable(s), a is the y-intercept, b is the slope of the explanatory variable(s) and u is the residual or error term.     
 
 \subsection{Neural networks}
 \subsubsection{Recurrent Neural Network}
@@ -113,8 +113,8 @@ When this is done the output from the output gate and the squished cell state ar
     \caption[Long Short-Term Memory network]{Depiction of a LSTM network.~\cite{dolphin_2021}}\label{fig:LSTM}
 \end{figure}
 
-https://towardsdatascience.com/lstm-networks-a-detailed-explanation-8fae6aefc7f9
 \subsubsection{Sigmoid function}
+The Sigmoid function is given as:
 \begin{equation}
     S(x) = \frac{e^x}{e^x+1}
 \end{equation}
@@ -127,9 +127,18 @@ Since:
 \end{equation}
 The Sigmoid function will only output values between 0 and 1. 
 \subsubsection{Hyperbolic tangent function}
+The hyperbolic tangent function is given as:
 \begin{equation}
     S(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^x-e^{-x}}{e^x+e^{-x}}
 \end{equation}
+Since:
+\begin{equation}
+    \lim_{x \to \infty}tanh(x) = \frac{\infty - 0}{\infty + 0} = \frac{\infty}{\infty} = 1
+\end{equation}
+\begin{equation}
+    \lim_{x \to -\infty}tanh(x) = \frac{0 - \infty}{0 + \infty} = \frac{-\infty}{\infty} = -1
+\end{equation}
+The hyperbolic tangent function will only output values between -1 and 1.
 
 \subsection{Economic Theory}
 \subsubsection{Consumer choice theory}
