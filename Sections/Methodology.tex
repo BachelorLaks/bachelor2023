@@ -104,10 +104,13 @@ One last way to expand on the ARIMA model in order to make it more accurate is t
 
 In order to measure the accuracy of these exogenous variables, we can follow the same procedure as before and compare both the AIC of different models as well as the root mean squared error of the predictions. Comparing the RMSE will probably prove to be a more accurate way of examining the accuracy of the models as AIC cannot handle different levels of differencing and will not work well to compare ARIMA with Tensorflow.~\parencite{brownlee_2017}
 \subsection{LSTM --- Tensorflow}\label{Tensorflow_Methodology}
-In order to apply the data to a LSTM model, we need to define the different parameters of the model. As a LSTM model consists of an input layer, a hidden layer, and an output layer, we need to define the number of neurons in each layer.
+In order to apply the data to a LSTM model, we need to define the different parameters of the model. As a LSTM model consists of an input layer, a hidden layer, and an output layer, we need to define the number of neurons in each layer. And as can be seen in Figure~\ref{fig:Layers}, all neurons between the layers has to be connected, which makes the complexity of the model grow exponentially. Therefore, we need to be careful not to make the model too complex, as it will use too much unnecessary computing power, as well as increasing the risk of overfitting.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{data/Figures/Neural networks/Layers_lstm.png}
-    \caption[Example of the different layers in an LSTM model.]{Example of the different layers in an LSTM model.~\cite{towardsai_2020}}\label{fig:Layers}
+    \caption[Example of the different layers in an LSTM model.]{Example of the different layers in an LSTM model.~\cite{towardsai_2020_1}.}\label{fig:Layers}
 \end{figure}
+
+\subsubsection{The input layer}
+The input layer is the first layer in the model, and as the name suggests, it is where the input data is fed into the model. 
