@@ -20,9 +20,25 @@ We wanted to explore the possibility that one might be able to use prices for si
 \subsubsection{Currency change}\label{Currency change}
 As mentioned the salmon market is an export market. This in turn means that the prices are affected by the changes in between the NOK and the currency of the markets that it is exported to. To account for this we have added Norges Bank's TWI to the dataset. ``The TWI is a nominal effective krone exchange rate calculated on the basis of NOK exchange rates against the currencies of Norway's 25 main trading partners.'' \parencite{norges_bank_2020} A rise in the value of the index indicates that the exchange rate of NOK depreciates.
 
-\subsection{Exploratory analysis}
+\subsection{Descriptive analysis}
+By looking at some simple descriptive statistics we will be able to decern if there are any changes needed to be done in the preprocessing stage. We would also gain a little bit of insight as to how our variables compare to eachother. We start by having a look at the price data for the different types of fish considering whether the cod and halibut is comparable to the salmon price.
 
-\subsection{Regression}
+\begin{tabular}{lrrr}
+    \toprule
+    {} &  SalmonPrice &    CodPrice &  HalibutPrice \\
+    \midrule
+    count &   507.000000 &  507.000000 &    507.000000 \\
+    mean  &    56.746134 &   24.553419 &     58.029858 \\
+    std   &    15.455462 &    8.096777 &      7.900179 \\
+    min   &    27.870000 &   10.275557 &     36.507234 \\
+    25\%   &    44.875000 &   20.365239 &     51.971903 \\
+    50\%   &    55.460000 &   24.035290 &     59.300626 \\
+    75\%   &    65.710000 &   30.478502 &     63.418690 \\
+    max   &   125.870000 &   49.076318 &     79.182888 \\
+    \bottomrule
+    \end{tabular}
+
+Looking at this we can see that the Halibut is very similar to the salmon in price but with a larger minimum and a lower maximum as well as half the standard deviation the halibut price seems to be much more stable. looking at the cod price we see that its quite a bit lower compared to the two others. Relative to its size it has a lot more similar characteristics to the salmon price in terms of price stability. scaling it by to we see that the mean price becomes 49 compared to the 55 of salmon and the standard deviation becomes 16 compared to the 15,5 of salmon. it seems then that relative swing in price of cod is of the same magnitude as the swing in price of salmon.
 
 \subsection{Data preprocessing}
 In order to use the data for prediction in our models we need to prepare the data. In our case this means to split the data into a training and test set. We will use the same split for all of our models, so that we they are comparable. The test set will be the last year of the data, 2021. The training set will be the rest of the data, 2013--2020. A very important aspect of forecasting using machine learning algorithms is that the test set should be `invisible' throughout the training process, otherwise we might get data leakage and consequently, a false sense of how well the model performs.~\parencite{brownlee_2016}
