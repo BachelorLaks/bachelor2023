@@ -23,20 +23,25 @@ As mentioned the salmon market is an export market. This in turn means that the 
 \subsection{Descriptive analysis}
 By looking at some simple descriptive statistics we will be able to decern if there are any changes needed to be done in the preprocessing stage. We would also gain a little bit of insight as to how our variables compare to each other. We start by having a look at the price data for the different types of fish considering whether the cod and halibut is comparable to the salmon price.
 
-\begin{tabular}{lrrr}
-    \toprule
-    {} &  SalmonPrice &    CodPrice &  HalibutPrice \\
-    \midrule
-    count &   507.000000 &  507.000000 &    507.000000 \\
-    mean  &    56.746134 &   24.553419 &     58.029858 \\
-    std   &    15.455462 &    8.096777 &      7.900179 \\
-    min   &    27.870000 &   10.275557 &     36.507234 \\
-    25\%   &    44.875000 &   20.365239 &     51.971903 \\
-    50\%   &    55.460000 &   24.035290 &     59.300626 \\
-    75\%   &    65.710000 &   30.478502 &     63.418690 \\
-    max   &   125.870000 &   49.076318 &     79.182888 \\
-    \bottomrule
+\begin{table}[H]
+    \begin{center}
+    \begin{tabular}{lrrr}
+        \toprule
+        {} &  SalmonPrice &    CodPrice &  HalibutPrice \\
+        \midrule
+        count &   507.000000 &  507.000000 &    507.000000 \\
+        mean  &    56.746134 &   24.553419 &     58.029858 \\
+        std   &    15.455462 &    8.096777 &      7.900179 \\
+        min   &    27.870000 &   10.275557 &     36.507234 \\
+        25\%   &    44.875000 &   20.365239 &     51.971903 \\
+        50\%   &    55.460000 &   24.035290 &     59.300626 \\
+        75\%   &    65.710000 &   30.478502 &     63.418690 \\
+        max   &   125.870000 &   49.076318 &     79.182888 \\
+        \bottomrule
     \end{tabular}
+    \end{center}
+    \caption{Descriptive statistics for the price data}
+\end{table}
 
 Looking at this we can see that the halibut is very similar to the salmon in price but with a larger minimum and a lower maximum as well as half the standard deviation the halibut price seems to be much more stable. looking at the cod price we see that its quite a bit lower compared to the two others. Relative to its size it has a lot more similar characteristics to the salmon price in terms of price stability. Scaling it by two we see that the mean price becomes 49 compared to the 55 of salmon and the standard deviation becomes 16 compared to the 15,5 of salmon. This indicates that the relative swing in price of cod is of the same magnitude as the swing in price of salmon. However the salmon price has a lot higher maximum price then the two others even if scaling the cod price by to, this may mean that we have some outliars at the very top of our salmon price range.
 
