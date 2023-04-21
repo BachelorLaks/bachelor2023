@@ -49,7 +49,7 @@ Looking at this we can see that the halibut is very similar to the salmon in pri
 
 \subsection{Data preprocessing}
 In order to use the data for prediction in our models we need to prepare the data. In our case this means to split the data into a training and test set. We will use the same split for all of our models, so that we they are comparable. The test set will be the last year of the data, 2021. The training set will be the rest of the data, 2013--2020. A very important aspect of forecasting using machine learning algorithms is that the test set should be `invisible' throughout the training process, otherwise we might get data leakage and consequently, a false sense of how well the model performs.~\parencite{brownlee_2016}
-\subsection{ARIMA and SARIMAX}
+\subsection{ARIMA and SARIMAX}\label{ARIMA and SARIMAX Methodology}
 
 As explained in~\ref{SeasonalityTheory} on page~\pageref{SeasonalityTheory}, one of the prerequisites for the ARIMA model is that the data is stationary. This can be done either by analysing the time-series itself and noticing the variance and trend, or by using the Augmented Dickey-Fuller test. 
 After this is done, the next step will be to find the optimal parameters for the ARIMA model. This is usually done by looking at the ACF and PACF plots. 
