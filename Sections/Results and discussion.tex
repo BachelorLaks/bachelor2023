@@ -30,15 +30,21 @@ One of the more prominent features of the Salmon data is the clear seasonality t
         \caption{Results of the grid search for the SARIMA model.}\label{tab:SARIMAResults}
     \end{center}
 \end{table}
-Similary to the ARIMA model, there is not a significant difference between the models, but the RMSE is clearly lower in the SARIMA than the ARIMA, this indicates the importance of capturing the seasonal trend in the dataset. The SARIMA(2,1,0)(0,1,0)[52] model has the lowest RMSE and should therefore be the most accurate SARIMA model. After fitting the model on the train data and comparing the predictions against the actual data we get the following plot:
+Similarly to the ARIMA model, there is not a significant difference between the models, but the RMSE is clearly lower in the SARIMA than the ARIMA, this indicates the importance of capturing the seasonal trend in the dataset. The SARIMA(2,1,0)(0,1,0)[52] model has the lowest RMSE and should therefore be the most accurate SARIMA model. After fitting the model on the train data and comparing the predictions against the actual data we get the following plot:
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=0.9\textwidth]{data/Figures/ARIMA/SARIMA_2_1_0_0_1_0_52.png}
-        \caption{SARIMA(2,1,0)(0,1,0)[52] model fitted to the data.}\label{fig:SARIMA_21001052}
+        \caption{SARIMA(2,1,0)(0,1,0,52) model fitted to the data.}\label{fig:SARIMA_21001052}
     \end{center}
 \end{figure}
-
-
+As we can see in figure~\ref{fig:SARIMA_21001052}, and as predicted from the RMSE, the SARIMA model is able predict the data much closer to the actual data than the ARIMA model. The 95\% confidence interval is still quite large, especially when we reach the end of 2022, but as we can see from the large spike in the spring of 2022, this interval is necessary to be accurate. We can also take a closer look at the twenty first predictions for the year 2022:
+\begin{table}[H]
+    \begin{center}
+        \import{data/Figures/ARIMA/}{SARIMAForecastTable2}
+        \caption{SARIMA(2,1,0)(0,1,0,52) model predictions for the year 2022.}\label{tab:SARIMA_forecast}
+    \end{center}
+\end{table}
+Sorting the difference between actual and predicted values in ascending order we can see that the model does have some large errors, especially in the spring of 2022 with the largest difference being -33.
 \subsection{SARIMAX}\label{sec:sarimax}
 
 \subsection{LSTM}\label{sec:lstm}
