@@ -2,7 +2,7 @@
 The following chapter will present the results of the models presented in Chapter~\ref{sec:methodology} before comparing the different models and discussing the results. We will start by examining the different ARIMA models, from the simplest ARIMA to the more complex SARIMA. We will then compare this to the LSTM model. 
 
 \subsection{ARIMA}\label{sec:arima}
-As explained in section \ref{ARIMA and SARIMAX Methodology}, determening the order of the ARIMA model can be a difficult and complex task, examining the ACF and PACF plots can be a good starting point, but will also be a bit subjective. The only objective way to optimize the model is to use a loss function. In our case we have chosen root mean squared error as this is a commonly used way to measure the accuracy of a model.
+As explained in section \ref{ARIMA and SARIMAX Methodology}, determining the order of the ARIMA model can be a difficult and complex task, examining the ACF and PACF plots can be a good starting point, but will also be a bit subjective. The only objective way to optimize the model is to use a loss function. In our case we have chosen root mean squared error as this is a commonly used way to measure the accuracy of a model.
 
 In order to find the model with the least RMSE, we performed a grid search on the different parameters using a nested for-loop and outputting the results in the following table: 
 \begin{table}[H]
@@ -44,7 +44,42 @@ As we can see in figure~\ref{fig:SARIMA_21001052}, and as predicted from the RMS
         \caption{SARIMA(2,1,0)(0,1,0,52) model predictions for the year 2022.}\label{tab:SARIMA_forecast}
     \end{center}
 \end{table}
-Sorting the difference between actual and predicted values in ascending order we can see that the model does have some large errors, especially in the spring of 2022 with the largest difference being -33.
+Sorting the difference between actual and predicted values in ascending order we can see that the model does have some large errors, especially in the spring of 2022 with the largest difference being -33.5. We can also take a look at the actual model with the different parameters:
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{lclc}
+        \toprule
+        \textbf{Dep. Variable:}          &          SalmonPrice           & \textbf{  No. Observations:  } &    457      \\
+        \textbf{Model:}                  & SARIMA(2, 1, 0)x(0, 1, 0, 52) & \textbf{  Log Likelihood     } & -1190.4   \\
+        \textbf{Date:}                   &        Fri, 21 Apr 2023        & \textbf{  AIC                } &  2386.72   \\
+        \textbf{Time:}                   &            14:19:24            & \textbf{  BIC                } &  2398.73   \\
+        \textbf{Sample:}                 &           04-07-2013           & \textbf{  HQIC               } &  2391.48   \\
+        \textbf{}                        &          - 01-02-2022          & \textbf{                     } &             \\
+        \textbf{Covariance Type:}        &              opg               & \textbf{                     } &             \\
+        \bottomrule
+        \end{tabular}
+        \begin{tabular}{lcccccc}
+                        & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+        \midrule
+        \textbf{ar.L1}  &       0.1953  &        0.044     &     4.486  &         0.000        &        0.110    &        0.281     \\
+        \textbf{ar.L2}  &      -0.2932  &        0.043     &    -6.895  &         0.000        &       -0.376    &       -0.210     \\
+        \textbf{sigma2} &      21.2106  &        1.328     &    15.966  &         0.000        &       18.607    &       23.814     \\
+        \bottomrule
+        \end{tabular}
+        \begin{tabular}{lclc}
+        \textbf{Ljung-Box (L1) (Q):}     & 0.14 & \textbf{  Jarque-Bera (JB):  } &  6.15  \\
+        \textbf{Prob(Q):}                & 0.71 & \textbf{  Prob(JB):          } &  0.05  \\
+        \textbf{Heteroskedasticity (H):} & 2.14 & \textbf{  Skew:              } & -0.14  \\
+        \textbf{Prob(H) (two-sided):}    & 0.00 & \textbf{  Kurtosis:          } &  3.54  \\
+        \bottomrule
+        \end{tabular}
+        \caption{SARIMA Results}\label{tab:SARIMA_results}
+    \end{center}
+\end{table}
+We can in table~\ref{tab:SARIMA_results} see our two autoregressive terms, ar.L1 and ar.L2, and the error term sigma2. The important thing to note from the table is that both the autoregressive terms has a p-value of 0.000, which means that they are both statistically significant. Another important conclusion to draw from the SARIMA results is whether or not the residuals are independent, or white noise. Examining the Ljung-Box test, we see that it produces a result with a p-value of 0.71, this is far greater than the critical value of 0.005. This means that we cannot reject the null hypothesis that the residuals are independent, and there could therefore be more information in the residuals that the model was not able to capture. 
+
+While the AIC and BIC values both can be important to when comparing models, the change in differencing and seasonality makes it difficult to compare the models purely based on this criterion. This is part of the reason why we chose to use the RMSE as our main criterion for comparing the models.
 \subsection{SARIMAX}\label{sec:sarimax}
 
 \subsection{LSTM}\label{sec:lstm}
