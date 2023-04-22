@@ -21,7 +21,27 @@ We wanted to explore the possibility that one might be able to use prices for si
 As mentioned the salmon market is an export market. This in turn means that the prices are affected by the changes in between the NOK and the currency of the markets that it is exported to. To account for this we have added Norges Bank's TWI to the dataset. ``The TWI is a nominal effective krone exchange rate calculated on the basis of NOK exchange rates against the currencies of Norway's 25 main trading partners.'' \parencite{norges_bank_2020} A rise in the value of the index indicates that the exchange rate of NOK depreciates.
 
 \subsection{Descriptive analysis}
-By looking at some simple descriptive statistics we will be able to decern if there are any changes needed to be done in the preprocessing stage. We would also gain a little bit of insight as to how our variables compare to each other. We start by having a look at the price data for the different types of fish considering whether the cod and halibut is comparable to the salmon price.
+\subsubsection{Salmon Price}\label{Salmon Price}
+By looking at some simple descriptive statistics we will be able to decern if there are any changes needed to be done in the preprocessing stage. We will also examine if there are any trends or correlations that we will have to capture in order to produce the models. Lets begin by looking at our main variable, the salmon price.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/Descriptive/SalmonPricePlot.png}
+    \caption[Evolution of the salmon price]{Salmon price evolution.}\label{fig:Salmon price evolution}
+\end{figure}
+
+Looking at the plot we can see that the price has been increasing over the years. The top price having tripled our starting price, the mean of the price seams to have risen as well. Another increase we notice is the increasing magnitude of the price fluctuation. This is not only causing out highest prices but also some of the lowest prices in recent year. The plot is also showing the seasonal pattern that we expected to find in the price data where it is higher in the winter and lower in the summer. This is a characteristic we want our models to capture in order to make more precise predictions. To understand the seasonality of the price better we plot the prices for each month of the year.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/Descriptive/seasonality.png}
+    \caption[Seasonality of the salmon price]{Seasonality of the salmon price}\label{fig:Seasonality of the salmon price}
+\end{figure}
+
+We see that there is a clear peek in the price in april. The price level in general is at its highest in the spring and early summer and at its lowest in late summer and early fall. Looking at our regression line we see that this is true for most of the data, and not only the very top price points of each month. This line also visualizes the spread in price for the individual months and we can see that the higher spread in price follows the months of the highest prices. This might not be due to higher prices differences during the spring. This characteristic is at least in part caused by the fact that the rising price level is amplifying the spring prices making the average of the earlier years a lot lower than the average of the later. This in turn makes it look like there are larger price differences during these months than what is actually the case.
+
+\subsubsection {comparison between the different types of fish}\label{comparison between the different types of fish}
+We would also like to gain a little bit of insight as to how our variables compare to each other. We start by having a look at the price data for the different types of fish considering whether the cod and halibut is comparable to the salmon price.
 
 \begin{table}[H]
     \begin{center}
@@ -40,12 +60,18 @@ By looking at some simple descriptive statistics we will be able to decern if th
         \bottomrule
     \end{tabular}
     \end{center}
-    \caption{Descriptive statistics for the price data}
+    \caption{Descriptive statistics for the fish price data}
 \end{table}
 
-Looking at this we can see that the halibut is very similar to the salmon in price but with a larger minimum and a lower maximum as well as half the standard deviation the halibut price seems to be much more stable. looking at the cod price we see that its quite a bit lower compared to the two others. Relative to its size it has a lot more similar characteristics to the salmon price in terms of price stability. Scaling it by two we see that the mean price becomes 49 compared to the 55 of salmon and the standard deviation becomes 16 compared to the 15,5 of salmon. This indicates that the relative swing in price of cod is of the same magnitude as the swing in price of salmon. However the salmon price has a lot higher maximum price then the two others even if scaling the cod price by to, this may mean that we have some outliars at the very top of our salmon price range.
+Looking at this we can see that the halibut is very similar to the salmon in price but with a larger minimum and a lower maximum as well as half the standard deviation the halibut price seems to be much more stable. Looking at the cod price we see that its quite a bit lower compared to the two others. Relative to its size it has a lot more similar characteristics to the salmon price in terms of price stability. If we scale it by two we will see that the mean price becomes 49 compared to the 55 of salmon and the standard deviation becomes 16 compared to the 15,5 of salmon. This indicates that the relative swing in price of cod is of the same magnitude as the swing in price of salmon. However the salmon price has a lot higher maximum price then the two others even if scaling the cod price by two, this may mean that we have some outliars at the very top of our salmon price range. To confirm this we will look at a boxplot of the price data.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/Descriptive/Whisker.png}
+    \caption[Whisker boxplot of fish price data]{whisker boxplot of fish price data.}\label{fig:Whisker boxplot}
+\end{figure}
 
+Looking at the boxplot we can see that the salmon does indeed have a lot of outliars at the top of the price range. The codprice seem to have a singular ourliar whilst the halibut price has none. The hight of the boxes also visualises the aforementioned price range differences well. Looking at the yellow lines reprecenting the average. We can see that the cod and halibut has a average cituated higher in middle of the 50th percentile. This means that the distribution of these two are a  little bit skewed to the right.
 
 \subsection{Data preprocessing}
 In order to use the data for prediction in our models we need to prepare the data. In our case this means to split the data into a training and test set. We will use the same split for all of our models, so that we they are comparable. The test set will be the last year of the data, 2021. The training set will be the rest of the data, 2013--2020. A very important aspect of forecasting using machine learning algorithms is that the test set should be `invisible' throughout the training process, otherwise we might get data leakage and consequently, a false sense of how well the model performs.~\parencite{brownlee_2016}
