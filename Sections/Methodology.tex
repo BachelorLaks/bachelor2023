@@ -30,9 +30,15 @@ By looking at some simple descriptive statistics we will be able to decern if th
     \caption[Evolution of the salmon price]{Salmon price evolution.}\label{fig:Salmon price evolution}
 \end{figure}
 
-Looking at the plot we can see that the price has been increasing over the years. The top price having tripled our starting price, the mean of the price seams to have risen as well. Another increase we notice is the increasing magnitude of the price fluctuation. This is not only causing out highest prices but also some of the lowest prices in recent year. The plot is also showing the seasonal pattern that we expected to find in the price data where it is higher in the winter and lower in the summer. This is a characteristic we want our models to capture in order to make more precise predictions.
+Looking at the plot we can see that the price has been increasing over the years. The top price having tripled our starting price, the mean of the price seams to have risen as well. Another increase we notice is the increasing magnitude of the price fluctuation. This is not only causing out highest prices but also some of the lowest prices in recent year. The plot is also showing the seasonal pattern that we expected to find in the price data where it is higher in the winter and lower in the summer. This is a characteristic we want our models to capture in order to make more precise predictions. To understand the seasonality of the price better we plot the prices for each month of the year.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/Descriptive/seasonality.png}
+    \caption[Seasonality of the salmon price]{Seasonality of the salmon price}\label{fig:Seasonality of the salmon price}
+\end{figure}
 
+We see that there is a clear peek in the price in april. The price level in general is at its highest in the spring and early summer and at its lowest in late summer and early fall. Looking at our average line we see that this is true for most of the data and not only the very top price points of each month 
 
 \subsubsection {comparison between the different types of fish}\label{comparison between the different types of fish}
 We would also like to gain a little bit of insight as to how our variables compare to each other. We start by having a look at the price data for the different types of fish considering whether the cod and halibut is comparable to the salmon price.
