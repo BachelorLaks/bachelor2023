@@ -5,7 +5,7 @@ We envision using economic theories such as consumer choice theory.
 Statistical theory, such as the presumptions for regression to evaluate whether our data sources meet the requirements, and our model is robust. 
 Neural networks, especially LSTM compared to other predictive models 
 
-\subsection{Forecasting the price of salmon}
+\subsection{Literature review}
 At the time of writing this thesis there are only a few papers directly forecasting the price of salmon. These papers use a variety of different methods to forecast the price of salmon. These papers also uses numerous features, creating a great starting point and giving insight in to what to focus on and what to disregard in future research. 
 
 \textcite{vukina_1994} is a study that forecasts the price of five different species of salmon in the Tokyo wholesale market. Four state-space models are used to predict and compare the prices by modelling non-stationary time series. When measuring the results according to MSE and MAPE the results the results were found to be quite good. The results were also surprisingly good at predicting the correct direction of the price-movement.
@@ -14,11 +14,44 @@ This study was followed by \textcite{gu_anderson_1995}. This study combines OLS 
 
 In the study "Short-term salmon price forecasting" by Daumantas Bloznelis 16 different methods are used to forecast 1-5 weeks Atlantic salmon spot prices. Every method \textcite{bloznelis_2017} uses gets the directional movement correct 50\% of the time for all forecasting horizons. For one week prediction k-nearest neighbour gives the best prediction. For two to three weeks prediction a vector error correction model using elastic net regulation gives the best results, and for four to five weeks future prices is the best method.
 
+\subsection{Economic Theory}
+\subsubsection{Consumer choice theory}
+``Consumer choice theory is the study of how individuals make choices about what goods and services to consume. The theory is based on the assumption that consumes have preferences for different goods and services and that they will choose the combination of goods and services that maximizes their utility subject to their budget constraints.'' \parencite{Perloff_2017} This means that if you have to types of goods that are exchangeable to some degree, the price of one should affect the price/demand of the other, and vice versa. Based on this notion we intend to test whether this affect exists in our data between salmon prices, cod prices and halibut prices.
 
-\subsection{Tensor flow}
-Tensor flow is an open source library for numerical computation that makes machine learning and developing neural networks faster and easier.~\parencite{yegulalp_2018}
-It works by allowing the user to define a graph of computations that are then executed by the library. The graph is defined by the user by creating nodes that represent mathematical operations, and edges that represent the multidimensional data arrays (tensors) communicated between them. 
-The library then optimizes the graph for execution on a CPU or GPU. 
+\subsubsection{Norwegian fishermen and the market for wild caught fish}\label{Norwegian fishermen and the market for wild caught fish}
+To understand where our price data comes from we need to take a look at how wild caught fish are sold in Norway. Wild caught fish in Norway have a heavily monitored way to the consumer. There are laws concerning quality and handling that secures the fish are safe to eat. There are also laws that dictate the way these fish can be sold and who are liable throughout this process. The laws concerning the sales are governed by the act on first hand purchace of wild marine resource. A sales organisation act like a middleman in the transaction between fisherman and fish buyer. They can be compared in likeness to an auction house or exchange, where the fisherman pays a fee to access the exchange to sell their fish. But the fishermen remain as owner of the fish until the time of the transaction. This means that the sales organistaion never actually own any of the fish. Through this sales process the Norwegian receipt for fishermen is created.\parencite{Nielsen_2022}
+
+\subsubsection{Exchangeable goods}\label{Exchangeable goods}
+We wanted to explore the possibility that one might be able to use prices for similar commodities such as different seafood to help predict the price of salmon. To find the prices of these exchangeable goods we contacted Norsk Råfisklag. They where very helpful and provided us with historic prices data for halibut and cod. The data they provided was gathered using the Norwegian receipt for fishermen also known as a contract note. The receipt is a concept that is unique to Norway. The receipt contains both the quantity of fish caught as well as the sales value of these fish and a plethora of other information. It has a number of purpose such as paying the fishermen, creating the invoice for the buyer, controlling that the quota of fish is upheld, contributing to the Norwegian statistics for wild caught fish, and more. We use data from these receipts to gather the week by week historic prices for halibut and cod. Norges Råfisklag witch provides the data is an entity created by the industry to make sure it upholds its responsibility to the rest of the society. It is also responsible for securing a fair and transparent industry for workers and the envoirement. This makes it a great reliable source of data.\parencite{Harland_2022}
+
+\subsubsection{Currency change}\label{Currency change}
+As mentioned the salmon market is an export market. This in turn means that the prices are affected by the changes in between the NOK and the currency of the markets that it is exported to. To account for this we have added Norges Bank's TWI to the dataset. ``The TWI is a nominal effective krone exchange rate calculated on the basis of NOK exchange rates against the currencies of Norway's 25 main trading partners.'' \parencite{norges_bank_2020} A rise in the value of the index indicates that the exchange rate of NOK depreciates.
+
+\subsection{Exploratory analysis}
+Exploratory data analysis (EDA) is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions. 
+
+There are 4 steps involved in an exploratory data analysis: data collection, data cleaning, univariate analysis and bivariate analysis. 
+Data collection simply consists of gathering the data needed for the analysis. 
+Data cleaning is the process of removing or replacing missing values, outliers and other anomalies. Anomalies can disproportionally skew the data and hence adversely affect the results.~\parencite{biswal_2023}
+Univariate analysis is analysis the data of only one variable. This is usually done by creating a histogram, boxplot or a frequency table.  
+Bivariate analysis uses the data of two variables and compares them to each other. This establishes the correlation (or lack of) between the two variables. This is usually done by creating a correlation matrix or by plotting the data in a scatterplot. 
+
+\subsection{Regression}
+Regression analysis is a reliable method of identifying which variables have impact on a topic of interest. Regression analysis consists of two types of variables; dependent and independent. The dependent variable is the main variable or factor that the model is trying to predict or understand. The independent variables are the factors that is hypothesized to have an impact on the chosen dependent variable. 
+
+Linear regression models often use a "least-squares approach" to determine a line of best fit (regression line) to a given dataset. This line is the yellow line in the figure below. A square is the squared distance between a datapoint and the regression line. These values needs to be squared in order to not counteract each other.   
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/Regression/regression_linear.png}
+    \caption[Depiction of a regression analysis]{Depiction of a regression analysis.~\cite{hyndman_athanasopoulos_2021}}\label{fig:Regression}
+\end{figure}
+
+When the process above has been completed a regression model is constructed. The general form of a multiple linear regression model is:  
+\begin{equation}
+    Y = a + b_1X_1 + b_2X_2 + b_3X_3 + ... + b_tX_t + u
+\end{equation}
+Where Y is the dependent variable, X is the independent variable(s), a is the y-intercept, b is the slope of the explanatory variable(s) and u is the residual or error term.
 
 \subsection{ARIMA --- SARIMAX}\label{ARIMATheory}
 
@@ -56,33 +89,6 @@ For time-series data there can often incur a seasonal trend which is a pattern t
 
 \subsubsection{Exogenous variables (X)}\label{ExogenousTheory}
 In addition to adding seasonality to the ARIMA model, one can also include exogenous variables and turn it into a multivariate model. This is often used when there is a clear correlation between the exogenous variable and the time series. For example, if the ARIMA model is used to predict the price of electricity, one could include weather data as one or several exogenous variables.~\parencite{elamin_fukushige_2018}
-
-
-\subsection{Exploratory analysis}
-Exploratory data analysis (EDA) is a method used to analyse datasets and summarize the main characteristics. It helps determine how best to manipulate datasources to get the answers needed. This makes it easier to discover patterns, anomalies, test hypotheses or checking assumptions. 
-
-There are 4 steps involved in an exploratory data analysis: data collection, data cleaning, univariate analysis and bivariate analysis. 
-Data collection simply consists of gathering the data needed for the analysis. 
-Data cleaning is the process of removing or replacing missing values, outliers and other anomalies. Anomalies can disproportionally skew the data and hence adversely affect the results.~\parencite{biswal_2023}
-Univariate analysis is analysis the data of only one variable. This is usually done by creating a histogram, boxplot or a frequency table.  
-Bivariate analysis uses the data of two variables and compares them to each other. This establishes the correlation (or lack of) between the two variables. This is usually done by creating a correlation matrix or by plotting the data in a scatterplot. 
-
-\subsection{Regression}
-Regression analysis is a reliable method of identifying which variables have impact on a topic of interest. Regression analysis consists of two types of variables; dependent and independent. The dependent variable is the main variable or factor that the model is trying to predict or understand. The independent variables are the factors that is hypothesized to have an impact on the chosen dependent variable. 
-
-Linear regression models often use a "least-squares approach" to determine a line of best fit (regression line) to a given dataset. This line is the yellow line in the figure below. A square is the squared distance between a datapoint and the regression line. These values needs to be squared in order to not counteract each other.   
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{data/Figures/Regression/regression_linear.png}
-    \caption[Depiction of a regression analysis]{Depiction of a regression analysis.~\cite{hyndman_athanasopoulos_2021}}\label{fig:Regression}
-\end{figure}
-
-When the process above has been completed a regression model is constructed. The genereal form of a multiple linear regression model is:  
-\begin{equation}
-    Y = a + b_1X_1 + b_2X_2 + b_3X_3 + ... + b_tX_t + u
-\end{equation}
-Where Y is the dependent variable, X is the independent variable(s), a is the y-intercept, b is the slope of the explanatory variable(s) and u is the residual or error term.     
 
 \subsection{Neural networks}
 \subsubsection{Recurrent Neural Network}
@@ -123,6 +129,10 @@ When this is done the output from the output gate and the squished cell state ar
     \caption[Long Short-Term Memory network]{Depiction of a LSTM network.~\cite{dolphin_2021}}\label{fig:LSTM}
 \end{figure}
 
+\subsubsection{Tensorflow}
+Tensorflow is an open source library for numerical computation that makes machine learning and developing neural networks faster and easier.~\parencite{yegulalp_2018}
+It works by allowing the user to define a graph of computations that are then executed by the library. The graph is defined by the user by creating nodes that represent mathematical operations, and edges that represent the multidimensional data arrays (tensors) communicated between them. 
+The library then optimizes the graph for execution on a CPU or GPU.
 \subsubsection{Sigmoid function}
 The Sigmoid function is given as:
 \begin{equation}
@@ -149,7 +159,3 @@ Since:
     \lim_{x \to -\infty}tanh(x) = \frac{0 - \infty}{0 + \infty} = \frac{-\infty}{\infty} = -1
 \end{equation}
 The hyperbolic tangent function will only output values between -1 and 1.
-
-\subsection{Economic Theory}
-\subsubsection{Consumer choice theory}
-``Consumer choice theory is the study of how individuals make choices about what goods and services to consume. The theory is based on the assumption that consumes have preferences for different goods and services and that they will choose the combination of goods and services that maximizes their utility subject to their budget constraints.'' \parencite{Perloff_2017} This means that if you have to types of goods that are exchangeable to some degree, the price of one should affect the price/demand of the other, and vice versa. Based on this notion we intend to test whether this affect exists in our data between salmon prices, cod prices and halibut prices.
