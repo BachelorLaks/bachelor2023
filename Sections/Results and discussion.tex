@@ -81,6 +81,7 @@ We can in table~\ref{tab:SARIMA_results} see our two autoregressive terms, ar.L1
 
 While the AIC and BIC values both can be important to when comparing models, the change in differencing and seasonality makes it difficult to compare the models purely based on this criterion. This is part of the reason why we chose to use the RMSE as our main criterion for comparing the models.
 \subsection{SARIMAX}\label{sec:sarimax}
+The final way to improve upon our ARIMA model is to include exogenous variables. We will also here utilize a grid search on the different parameters in order to optimize the model. To reduce the number of iterations we will assume that the optimal parameters from the SARIMA model are still the optimal parameters for the SARIMAX model.
 
 \subsection{LSTM}\label{sec:lstm}
 
