@@ -74,14 +74,83 @@ Sorting the difference between actual and predicted values in ascending order we
         \textbf{Prob(H) (two-sided):}    & 0.00 & \textbf{  Kurtosis:          } &  3.54  \\
         \bottomrule
         \end{tabular}
-        \caption{SARIMA Results}\label{tab:SARIMA_results}
+        \caption{SARIMA(2, 1, 0)x(0, 1, 0, 52) Results}\label{tab:SARIMA_summary}
     \end{center}
 \end{table}
-We can in table~\ref{tab:SARIMA_results} see our two autoregressive terms, ar.L1 and ar.L2, and the error term sigma2. The important thing to note from the table is that both the autoregressive terms has a p-value of 0.000, which means that they are both statistically significant. Another important conclusion to draw from the SARIMA results is whether or not the residuals are independent, or white noise. Examining the Ljung-Box test, we see that it produces a result with a p-value of 0.71, this is far greater than the critical value of 0.005. This means that we cannot reject the null hypothesis that the residuals are independent, and there could therefore be more information in the residuals that the model was not able to capture. 
+We can in table~\ref{tab:SARIMA_summary} see our two autoregressive terms, ar.L1 and ar.L2, and the error term sigma2. The important thing to note from the table is that both the autoregressive terms has a p-value of 0.000, which means that they are both statistically significant. Another important conclusion to draw from the SARIMA results is whether or not the residuals are independent, or white noise. Examining the Ljung-Box test, we see that it produces a result with a p-value of 0.71, this is far greater than the critical value of 0.005. This means that we cannot reject the null hypothesis that the residuals are independent, and there could therefore be more information in the residuals that the model was not able to capture. 
 
 While the AIC and BIC values both can be important to when comparing models, the change in differencing and seasonality makes it difficult to compare the models purely based on this criterion. This is part of the reason why we chose to use the RMSE as our main criterion for comparing the models.
 \subsection{SARIMAX}\label{sec:sarimax}
-The final way to improve upon our ARIMA model is to include exogenous variables. We will also here utilize a grid search on the different parameters in order to optimize the model. To reduce the number of iterations we will assume that the optimal parameters from the SARIMA model are still the optimal parameters for the SARIMAX model.
+The final way to improve upon our ARIMA model is to include exogenous variables. We will also here utilize a grid search on the different parameters in order to optimize the model. To reduce the number of iterations we will assume that the optimal parameters from the SARIMA model are still the optimal parameters for the SARIMAX model. Further, we have the choice between having all exogenous variables in the model, only a few, or just a single variable. We will start by including all exogenous variables in the model, and then gradually reduce the number of exogenous variables. As there is only one possible model when including all models we will not use a grid search, but instead just fit the model, we then get the following results:
+\begin{table}[H]
+    \begin{center}
+        \import{data/Figures/ARIMA/}{SARIMAX_all_RMSE_df}
+        \caption{Result from SARIMAX model with all exogenous variables.}\label{tab:SARIMAX_all}
+    \end{center}
+\end{table}
+As we can see from table~\ref{tab:SARIMAX_all} the RMSE did increase from table~\ref{tab:SARIMAResults}, this probably means that the exogenous variables do not increase the accuracy of the model. This might be because there are conflicting trends in the exogenous variables that cancel each other out. A better way to increase accuracy might therefore be to drop some of the exogenous variables and instead include the ones that reduces the RMSE the most. Iterating over all possible combinations of two exogenous variables we get the following results:
+\begin{table}[H]
+    \begin{center}
+        \import{data/Figures/ARIMA/}{SARIMAX_multi_RMSE_df}
+        \caption{Result from SARIMAX model with two exogenous variables.}\label{tab:SARIMAX_multi}
+    \end{center}
+\end{table}
+Examining the RMSE we can now see that reducing the number of variables had a positive effect on the accuracy of the model. We archived the best results when including HalibutPrice and TWI as exogenous variables. This might indicate that the CodPrice has a negative effect on the model. In addition, this SARIMAX model is more accurate than the SARIMA model, which indicates that the inclusion of exogenous variables can improve the accuracy. 
+
+Still, we can reduce the number of exogenous variables to just one, in order possibly improve the accuracy even further. Utilizing a grid search we get the following results:
+\begin{table}[H]
+    \begin{center}
+        \import{data/Figures/ARIMA/}{SARIMAX_uni_RMSE_df_assume}
+        \caption{Result from SARIMAX model with one exogenous variable.}\label{tab:SARIMAX_uni}
+    \end{center}
+\end{table}
+As we can see, the RMSE did improve. More interestingly, it seems that the only exogenous variable that improves the accuracy of the model is the TWI, as both HalibutPrice, CodPrice and CPI has a negative effect on the model. To examine the results further we can take a look at the summary of the model:
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{lclc}
+        \toprule
+        \textbf{Dep. Variable:}          &          SalmonPrice           & \textbf{  No. Observations: } &    457      \\
+        \textbf{Model:}                  & SARIMAX(2, 1, 0)x(0, 1, 0, 52) & \textbf{  Log Likelihood    } & -1185.0  \\
+        \textbf{Date:}                   &        Sun, 23 Apr 2023        & \textbf{  AIC               } &  2378.09   \\
+        \textbf{Time:}                   &            17:10:51            & \textbf{  BIC               } &  2394.09   \\
+        \textbf{Sample:}                 &           04-07-2013           & \textbf{  HQIC              } &  2384.42   \\
+        \textbf{}                        &          - 01-02-2022          & \textbf{                     } &             \\
+        \textbf{Covariance Type:}        &              opg               & \textbf{                     } &             \\
+        \bottomrule
+        \end{tabular}
+        \begin{tabular}{lcccccc}
+                        & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+        \midrule
+        \textbf{TWI}    &      -0.5192  &        0.146     &    -3.561  &         0.000        &       -0.805    &       -0.233     \\
+        \textbf{ar.L1}  &       0.1774  &        0.043     &     4.087  &         0.000        &        0.092    &        0.263     \\
+        \textbf{ar.L2}  &      -0.3044  &        0.044     &    -6.850  &         0.000        &       -0.391    &       -0.217     \\
+        \textbf{sigma2} &      20.6612  &        1.320     &    15.650  &         0.000        &       18.074    &       23.249     \\
+        \bottomrule
+        \end{tabular}
+        \begin{tabular}{lclc}
+        \textbf{Ljung-Box (L1) (Q):}     & 0.05 & \textbf{  Jarque-Bera (JB):  } &  5.29  \\
+        \textbf{Prob(Q):}                & 0.82 & \textbf{  Prob(JB):          } &  0.07  \\
+        \textbf{Heteroskedasticity (H):} & 2.04 & \textbf{  Skew:              } & -0.17  \\
+        \textbf{Prob(H) (two-sided):}    & 0.00 & \textbf{  Kurtosis:          } &  3.45  \\
+        \bottomrule
+        \end{tabular}
+        \caption{SARIMAX(2, 1, 0)x(0, 1, 0, 52) Results}
+    \end{center}
+\end{table}
+Compared to table~\ref{tab:SARIMA_summary}, we can see that both the AIC and BIC have been reduced. This does indicate that the model is more accurate. However, the Ljung-Box test is still above the critical value of 0.005 which indicates that the residuals are not white noise and that there might be some trends left in the residuals that the model has not captured.
+
+Finally, we can plot the results from the best SARIMA and SARIMAX model against the actual data:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/SARIMA-SARIMAX.png}
+    \caption{SARIMAX model with TWI as exogenous variable compared with SARIMA.}\label{fig:SARIMA-SARIMAX}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{data/Figures/ARIMA/SARIMA-SARIMAX_no_train.png}
+    \caption{Predictions from figure~\ref{fig:SARIMA-SARIMAX}.}\label{fig:SARIMA-SARIMAX_no_train}
+\end{figure}
+
 
 \subsection{LSTM}\label{sec:lstm}
 
