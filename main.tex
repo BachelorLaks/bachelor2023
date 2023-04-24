@@ -4,6 +4,7 @@
 \linespread{1.5} % Line spacing
 
 \begin{document}
+\pagenumbering{Roman} % Roman numerals on the first page
 
 \author{Henrk Bjørnstad \and Øyvind Løvig Halvorsen \and Victor Carl Johan Rognås}
 \title{PLACEHOLDER}
@@ -18,9 +19,10 @@
 \import{./Sections/}{Sammendrag}
 \newpage
 
-\begin{spacing}{0.8}
+\begin{spacing}{0.82} % Line spacing for the table of contents, 0.82 to satisfy chapter three on own page
     \listoffigures
-    
+    \newpage
+
     \listoftables
     \newpage
     
@@ -47,7 +49,7 @@
 % Printing bibliography
 \newpage
 \newrefcontext[sorting=nyt]
-\printbibliography[heading = bibintoc, title = Works Cited]
+\printbibliography[heading = bibintoc, title = References]
 % 'bibintoc' inserts our bibliography into the table of contents
 
 \end{document}
