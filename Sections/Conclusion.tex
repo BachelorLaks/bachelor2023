@@ -6,3 +6,9 @@
     \item End with why we may not get the results we sought
     \item "It is important to further improve the model to get better results"
 \end{itemize}
+
+In this thesis we have explored how accurately different analytical models performs when trying to predict the price of salmon using similar commodities and macroeconomic factors. In order to do this we first performed a simple exploratory analysis to see if there was any needed changes to be done in the preprocessing stage. This was not the case. This was followed by four different models; ARIMA, SARIMA, SARIMAX and LSTM. 
+
+The general findings is that the SARIMA and SARIMAX models produces quite similar predictions, and both outperform the ARIMA model. This clearly indicates that seasonality must be taken into account. When examining the SARIMAX predictions we see that the confidence interval is rather large. However, the salmon price spiked massively in the spring of 2022, so this is necessary. Therefore, simply examining whether or not the model predicts the correct movement of the price is of relevance. Although the model is not great, it is somewhat capable of catching the trends in the short term. 
+
+Examining the Ljung-Box test on the SARIMAX model shows that the residuals are not white noise, and that there might be some trends left to capture. ... Future research
