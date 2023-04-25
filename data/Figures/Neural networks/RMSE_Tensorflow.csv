@@ -1,3 +1,3 @@
 ,Run,Batch Size,Epochs,Model Name,Model alternative,Optimizer,Time steps,Uni/Multi,RMSE
-0,1,1,10,Model 1,1,adam,1,Univariate,32.792104656882145
-1,2,1,10,Model 2,1,adam,1,Multivariate,32.65843627978021
+0,1,1,10,Model 1,1,adam,1,Univariate,32.27404859161346
+1,2,1,10,Model 2,1,adam,1,Multivariate,31.126496687922444
