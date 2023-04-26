@@ -170,6 +170,8 @@ Comparing these predictions we find no discernible difference between the two mo
 
 One limitation in our data is the massive swings of the salmon price in 2022. Compared to earlier years we see that the trends are still the same in 2022, but the extent of the price-spikes are much larger. This means that actually producing a model that predicts the price in 2022 relatively well would mean that the model is in fact not very good. Good models would have to produce lower highs and higher lows than what was actually the case in 2022. 
 
+Overall the SARIMAX model seems to be the best model for predicting the salmon price. However, the LSTM model has the potential to be the best model, but it needs more work. The struggles of the best models were mainly predicting the big magnitude in price change as it is following the price change in direction in many cases, but not as steep as the actual change.
+
 Even though our best model, the SARIMAX, seems to be somewhat able to catch the trends, we cant say that there isnt more information in the residuals. The results from the Ljung-Box test means that we have to reject the null hypothesis. However, rejecting the null hypothesis only tells us that we cant claim that there isnt white noise. It does not mean that we can claim that there is white noise. This uncertainty means that we cant be sure how much of the price fluctuations are explained by the model and how much is left in the residuals. 
 
 
