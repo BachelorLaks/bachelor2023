@@ -179,7 +179,8 @@ An interesting observation is that while the SARIMA and SARIMAX were quite simil
     \\[\smallskipamount]
     \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_286.png}\hfill
     \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_46.png}
-    \caption[The eight best models measured by RMSE, 1--4]{The eight best models measured by RMSE, 1--4}\label{fig:best_models14}
+    \captionsetup{justification=centering}
+    \caption[The eight best models measured by RMSE, 1--4]{The eight best models measured by RMSE, 1--4, actual data in red, predicted data in blue}\label{fig:best_models14}
 \end{figure}
 
 \begin{figure}[H]
@@ -187,10 +188,12 @@ An interesting observation is that while the SARIMA and SARIMAX were quite simil
     \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_124.png}\hfill
     \\[\smallskipamount]
     \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_130.png}\hfill
-    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_52.png}\hfill
-    \caption[The eight best models measured by RMSE, 5--8]{The eight best models measured by RMSE, 5--8}\label{fig:best_models58}
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_52.png}
+    \captionsetup{justification=centering}
+    \caption[The eight best models measured by RMSE, 5--8]{The eight best models measured by RMSE, 5--8, actual data in red, predicted data in blue}\label{fig:best_models58}
 \end{figure}
 
+\vspace{\baselineskip}
 By plotting the models from table~\ref{tab:RMSE_Tensorflow} we can see that the four best models are able to quite accurately predict the next year, while the next four models does not seem to capture any other trend than a rolling mean. The RMSE from these models may therefore be somewhat misleading as they are not able to capture any complex trends. 
 
 In order to determine the effect of the different hyperparameters we can group by these and calculate the mean RMSE for each group. This is done in the following tables:
@@ -230,6 +233,25 @@ In order to determine the effect of the different hyperparameters we can group b
 \end{table}
 \end{minipage}%
 
+From the different tables we can discern that there are not any large difference in RMSE between the different hyperparameters. With the exception of univariate to multivariate where the multivariate models do have a clear lower RMSE. An interesting conclusion to draw is that the batch size seem to have a small effect on the RMSE, and it may therefore be more efficient with a large batch size, as this should decrease the computational time needed. Another is that the number of time steps does not have a large effect on the RMSE, even though we hypothesised that it may see more seasonality when introducing more time steps. This may still be attributed to the models ability to capture the rolling trend of the data in such a way that the RMSE becomes somewhat misleading.
+
+The number of epochs in table~\ref{tab:RMSE_epochs} does not seem to vary from 10 to 40, but seems to have some effect when increasing to 100 epochs. This may either be due to the need for more epochs to draw out the information from the data, especially with such a simple model, or it may be because of overfitting of the data. Taking a look at the loss plot from the same models we examined in figure~\ref{fig:best_models14} and~\ref{fig:best_models58} we see that for the models with an actual variation in the prediction there is a logarithmic decrease, converging towards 0 loss. Comparatively, the models where the predictions are more similar to a rolling mean, the loss exhibits a large amount of variation. This may indicate that the model is not able to learn anything from the data, and is therefore not able to improve the prediction. 
+
+Interestingly, several of the models that perform well in terms of RMSE, have an optimal epoch of 40. This might indicate that the loss will increase with more epochs. 
+\begin{figure}[H]
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_186.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_72.png}\hfill
+    \\[\smallskipamount]
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_286.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_46.png}\caption{Loss plot for the eight best models measured by RMSE, 1--4}\label{fig:loss_14}
+\end{figure}
+\begin{figure}
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_202.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_124.png}\hfill
+    \\[\smallskipamount]
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_130.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_52.png}\caption{Loss plot for the eight best models measured by RMSE, 5--8}\label{fig:loss_58}
+\end{figure}
 
 \subsection{Comparison and Discussion}\label{sec:comparison}
 
@@ -243,19 +265,3 @@ Even though our best model, the SARIMAX, seems to be somewhat able to catch the 
 
 When suggesting further research we note that when
 examining the Ljung-Box test on the SARIMAX model. It shows that the residuals are not white noise, and that there might be some trends left to capture. We therefore suggest that future research focuses on improving the models and perhaps lengthen the dataset in order to get better odds of picking up these more illusive trends. One possibility for improving the models is simply to use more computing power as this would allow for more complex models. Another possibility is to use different variables in the multivariate analysis in LSTM as we saw the multivariate was by far the best version of LSTM. This might also apply to the SARIMAX model. It is possible to try different models entirely, but we suggest focusing on multivariate.
-
-
-\begin{figure}[H]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_186.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_72.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_286.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_46.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_202.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_124.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_130.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_52.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_268.png}\hfill
-    \caption{Loss function for the 9 best tensorflow models}\label{fig:tensorflow preds loss}
-\end{figure}
