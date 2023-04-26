@@ -11,7 +11,7 @@ In order to find the model with the least RMSE, we performed a grid search on th
         \caption{Results of the grid search for the ARIMA model.}\label{tab:ARIMAResults}
     \end{center}
 \end{table}
-Examining table~\ref{tab:ARIMAResults} we can see that the ARIMA(0,1,1) has the lowest RMSE and is therefore expected to be the best model, but there is no significant difference between the models, this may indicate that the model is not able to capture the trends. An ARIMA model with $p$ of 0, $d$ of 1 and $q$ of 1 is, according to \textcite{nau_2019}, a simple exponential smoothing model which indicates that it may capture the moving average trend, but no other trends. Fitting the model to the data and plotting the results against the actual values we get the following plot:
+Examining table~\ref{tab:ARIMAResults} we can see that the ARIMA(0,1,1) has the lowest RMSE and is therefore expected to be the best model, but there is no significant difference between the models. This may indicate that the model is not able to capture the trends. An ARIMA model with $p$ of 0, $d$ of 1 and $q$ of 1 is, according to \textcite{nau_2019}, a simple exponential smoothing model which indicates that it may capture the moving average trend, but no other trends. Fitting the model to the data and plotting the results against the actual values we get the following plot:
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=0.9\textwidth]{data/Figures/ARIMA/ARIMA_0_1_1.png}
