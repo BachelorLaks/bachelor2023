@@ -8,3 +8,5 @@ Our research and testing has shown that the predictions improve when taking seas
 Even though the SARIMAX model performs the best, there are still areas of uncertainty. Tests on the SARIMAX model show that we can't conclude whether or not the residuals are white noise. We can only conclude that we can't reject the null hypothesis that the residuals are white noise.  
 
 In conclusion the models taking seasonality into account can to some extent catch the trends in the price of salmon, but they are not able to predict the price of salmon with a high degree of accuracy. 
+
+![alt text](https://seatrans.no/wp-content/uploads/2022/01/FIskestim-scaled.jpg)
