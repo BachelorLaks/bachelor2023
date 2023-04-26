@@ -161,7 +161,37 @@ In order to get a meaningful result from the different models in the grid search
     \end{adjustbox}
     \caption{RMSE for each model in the grid search.}\label{tab:RMSE_Tensorflow_head}
 \end{table}
+These first runs are not particularly accurate, at least compared to the best SARIMAX models, there are also no clear difference between the different parameters. A more efficient way to find the best models is sorting after the RMSE. This is done in the following table:
+\begin{table}[H]
+    \centering
+    \begin{adjustbox}{width=\columnwidth,center}
+    \import{"data/Figures/Neural networks/"}{RMSE_Tensorflow_top}
+    \end{adjustbox}
+    \caption{RMSE for each model in the grid search sorted after RMSE.}\label{tab:RMSE_Tensorflow}
+\end{table}
+By examining table~\ref{tab:RMSE_Tensorflow} we can clearly see that the best performing LSTM model is run number 186 with a batch size of 26, 100 epochs, 52 timesteps and with the nadam optimizer. Still, the RMSE is somewhat worse than the best SARIMAX model. This may indicate that the neural network was not able to capture all the trends in the dataset. 
 
+An interesting observation is that while the SARIMA and SARIMAX were quite similar measured by RMSE, every single of the best LSTM models are multivariate. The LSTM may therefore be better suited for multivariate time series than univariate, and may need a larger amount of data to be able to capture the trends. 
+
+\begin{figure}[H]
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_186.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_72.png}\hfill
+    \\[\smallskipamount]
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_286.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_46.png}
+    \caption[The eight best models measured by RMSE, 1--4]{The eight best models measured by RMSE, 1--4}\label{fig:best_models14}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_202.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_124.png}\hfill
+    \\[\smallskipamount]
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_130.png}\hfill
+    \includegraphics[width=.48\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_52.png}\hfill
+    \caption[The eight best models measured by RMSE, 5--8]{The eight best models measured by RMSE, 5--8}\label{fig:best_models58}
+\end{figure}
+
+By plotting the models from table~\ref{tab:RMSE_Tensorflow} we can see that the four best models are able to quite accurately predict the next year, while the next four models does not seem to capture any other trend than a rolling mean. The RMSE from these models may therefore be somewhat misleading as they are not able to capture any complex trends. 
 
 \subsection{Comparison and Discussion}\label{sec:comparison}
 
@@ -186,20 +216,6 @@ Even though our best model, the SARIMAX, seems to be somewhat able to catch the 
 When suggesting further research we note that when
 examining the Ljung-Box test on the SARIMAX model. It shows that the residuals are not white noise, and that there might be some trends left to capture. We therefore suggest that future research focuses on improving the models and perhaps lenghten the dataset in order to get better odds of picking up these more illusive trends. One posibility for imporving the models is simply to use more computing power as this would allow for more complex models. Another possibility is to use different variables in the multivariate analysis in LSTM as we saw the multivariate was by far the best version of LSTM. This might also apply to the SARIMAX model. It is possible to try different models entierly, but we suggest focusing on multivariate.
 
-\begin{figure}[H]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_186.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_72.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_286.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_46.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_202.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_124.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_130.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_52.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_268.png}\hfill
-    \caption{9 best tensorflow predictions measured by RMSE}\label{fig:tensorflow preds}
-\end{figure}
 
 \begin{figure}[H]
     \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_186.png}\hfill
