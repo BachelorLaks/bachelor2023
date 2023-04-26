@@ -30,7 +30,7 @@ One of the more prominent features of the Salmon data is the clear seasonality t
         \caption{Results of the grid search for the SARIMA model.}\label{tab:SARIMAResults}
     \end{center}
 \end{table}
-Similarly, to the ARIMA model, there is not a significant difference between the models, but the RMSE is clearly lower in the SARIMA than the ARIMA, this indicates the importance of capturing the seasonal trend in the dataset. The SARIMA(2,1,0)(0,1,0)[52] model has the lowest RMSE and should therefore be the most accurate SARIMA model. After fitting the model on the train data and comparing the predictions against the actual data we get the following plot:
+Similarly, to the ARIMA model, there is not a significant difference between the models, but the RMSE is clearly lower for the SARIMA than the ARIMA, this indicates the importance of capturing the seasonal trend in the dataset. The SARIMA(2,1,0)(0,1,0)[52] model has the lowest RMSE and should therefore be the most accurate SARIMA model. After fitting the model on the train data and comparing the predictions against the actual data we get the following plot:
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=0.9\textwidth]{data/Figures/ARIMA/SARIMA_2_1_0_0_1_0_52.png}
