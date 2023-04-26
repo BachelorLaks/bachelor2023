@@ -16,33 +16,3 @@ Examining the Ljung-Box test on the SARIMAX model shows that the residuals are n
 \subsection{Plausible error source for LSTM in the low lookback ranges}:
 Given that the NASDAQ gathers it data though sampeling form a large range of sales venues each week and by doing this aggregating a good average in the sampeling stack. This might cause the low lookback LSTM models to look at outliers separately and not as a part of the general trend. This might cause the model to not be able to catch the general trend in the low lookback ranges.
 For further research in the topic we suggest to look to try and improve the models through either utilizing more data, and more computing power to make the ARIMA and LSTM able to catch more time consuming trends in the residuals. From the ljung-box test we see that there is almost definitely trends left to capture.
-
-\begin{figure}[H]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_186.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_72.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_286.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_46.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_202.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_124.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_130.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_52.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotmodel_268.png}\hfill
-    \caption{9 best tensorflow predictions measured by RMSE}\label{fig:tensorflow preds}
-\end{figure}
-
-\begin{figure}[H]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_186.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_72.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_286.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_46.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_202.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_124.png}\hfill
-    \\[\smallskipamount]
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_130.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_52.png}\hfill
-    \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotLoss_268.png}\hfill
-    \caption{loss function for the 9 best tensorflow models}\label{fig:tensorflow preds loss}
-\end{figure}
