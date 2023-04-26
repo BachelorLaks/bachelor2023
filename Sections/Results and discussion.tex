@@ -137,7 +137,7 @@ As we can see, the RMSE did improve. More interestingly, it seems that the only 
         \caption{SARIMAX(2, 1, 0)x(0, 1, 0, 52) Results}
     \end{center}
 \end{table}
-Compared to table~\ref{tab:SARIMA_summary}, we can see that both the AIC and BIC have been reduced. This does indicate that the model is more accurate. However, the p-value of the Ljung-Box test is still above the critical value of 0.005 which indicates that the residuals are not white noise and that there might be some trends left in the residuals that the model has not captured.
+Compared to table~\ref{tab:SARIMA_summary}, we can see that both the AIC and BIC have been reduced. This does indicate that the model is more accurate. However, the p-value of the Ljung-Box test is still above the critical value of 0.05 which indicates that the residuals are not white noise and that there might be some trends left in the residuals that the model has not captured.
 
 Finally, we can plot the results from the best SARIMA and SARIMAX model against the actual data:
 \begin{figure}[H]
