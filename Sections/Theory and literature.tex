@@ -114,7 +114,7 @@ The output of the new memory vector and the input gate is then multiplied, and t
 
 The output gate uses the newly updated cell state, the previous hidden state and the new input data to decide the new hidden state. 
 The inputs in the output gate are the previous hidden state, and the new input data, and this is fed into a sigmoid activated neural network. 
-This works as a filter, so that the output gate doesn't simply output everything it knows about something, and instead only outputs the most relevant information. 
+This works as a filter, so that the output gate does not simply output everything it knows about something, and instead only outputs the most relevant information. 
 Before this output can be used as the new hidden state, the cell state has to be passed through a tanh activation function, in order to force the values to be between -1 and 1 (so called "squished cell state"). 
 When this is done the output from the output gate and the squished cell state are then multiplied. This outputs the new hidden state.  
 
