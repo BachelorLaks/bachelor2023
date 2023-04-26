@@ -194,13 +194,11 @@ An interesting observation is that while the SARIMA and SARIMAX were quite simil
 By plotting the models from table~\ref{tab:RMSE_Tensorflow} we can see that the four best models are able to quite accurately predict the next year, while the next four models does not seem to capture any other trend than a rolling mean. The RMSE from these models may therefore be somewhat misleading as they are not able to capture any complex trends. 
 
 In order to determine the effect of the different hyperparameters we can group by these and calculate the mean RMSE for each group. This is done in the following tables:
-\begin{minipage}{.5\textwidth\relax}
 \begin{table}[H]
     \centering
     \import{"data/Figures/Neural networks/"}{RMSE_Batch_size}
     \caption{Mean RMSE for each batch size.}\label{tab:RMSE_batch_size}
 \end{table}
-\end{minipage}%
 
 \begin{minipage}{.5\textwidth\relax}
     \begin{table}[H]
