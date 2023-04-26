@@ -179,3 +179,15 @@ Consequently, there are a great number of hyperparameters that needs to be chose
 The output layer is the last layer in the model, and as the name suggests, it is where the output is generated. This layer consists of a single neuron which will output the predicted value of the Salmon price. 
 
 In conclusion, we will choose an appropriate number of timesteps for the input tensor, and then use grid search to find the optimal model. The hyperparameters we will evaluate are the number of neurons in the hidden layer, the activation function, the number of epochs, the batch size, the dropout rate, and the optimization algorithm. In order to evaluate the model, we will use the root mean squared error, which is the same metric we used for the ARIMA model.
+
+\subsubsection{Implementation}
+Finding the optimal neural network can be a complex and time-consuming task, we therefore constructed a nested for-loop with different hyperparameters. A network like this can be connected with infinite amount of params, depending on the amount of layers and neurons, to reduce the complexity and run-time, we opted for a simpler model with only 97 params and three layers. During the research period, we did some limited testing with more complex models, but did not find any improvements over the simpler ones.
+
+As the first layer we experimented with different options, but ended up with a flatten layer, this is used to reduce the dimensionality of the input data and make it easier for the model to learn. In order to keep the model as simple, we used a single hidden dense layer with 32 neurons and a relu activation function. The output layer is a dense layer with a single neuron.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{data/Figures/Neural networks/model_tf1.png}
+    \caption{Model architecture.}\label{fig:model_tf1}
+\end{figure}
+
+In order to test for the different possible models, we decided to have the batch size, the number of epochs, the number of timesteps and different optimizers as variables in our loop. In addition we tested for both univariate and multivariate models. The batch size is the number of samples that will be propagated through the network, we choose to test for batch sizes between 1 and 104. The number of epochs is the amount of times the model will be trained for each model, we here chose epochs between 10 and 100. The number of time steps we chose to use is a week, four weeks, 52 weeks and 104 week. The main reason for this is the hypothesis that the model will perform better if it is able to take the seasonality into account. The optimizers we tested for are Adam and nadam, two of the more accurate optimizers.~\parencite{zaman2021} In conclusion, this resulted in 288 different models.

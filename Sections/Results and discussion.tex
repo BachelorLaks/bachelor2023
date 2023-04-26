@@ -1,8 +1,8 @@
 \section{Results and discussion}\label{sec:results}
-The following chapter will present the results of the models presented in Chapter~\ref{sec:methodology} before comparing the different models and discussing the results. We will start by examining the different ARIMA models, from the simplest ARIMA to the more complex SARIMA. We will then compare this to the LSTM model. 
+The following chapter will discuss the results of the models presented in section~\ref{sec:methodology} before comparing the different models and discussing the results. We will start by examining the different ARIMA models, from the simplest ARIMA to the more complex SARIMA. We will then compare this to the LSTM model. 
 
 \subsection{ARIMA}\label{sec:arima}
-As explained in section \ref{ARIMA and SARIMAX Methodology}, determining the order of the ARIMA model can be a difficult and complex task, examining the ACF and PACF plots can be a good starting point, but will also be a bit subjective. The only objective way to optimize the model is to use a loss function. In our case we have chosen root mean squared error as this is a commonly used way to measure the accuracy of a model.
+As explained in section~\ref{ARIMA and SARIMAX Methodology}, determining the order of the ARIMA model can be a difficult and complex task, examining the ACF and PACF plots can be a good starting point, but will also be a bit subjective. The only objective way to optimize the model is to use a loss function. In our case we have chosen root mean squared error as this is a commonly used way to measure the accuracy of a model.
 
 In order to find the model with the least RMSE, we performed a grid search on the different parameters using a nested for-loop and outputting the results in the following table: 
 \begin{table}[H]
@@ -153,6 +153,15 @@ Finally, we can plot the results from the best SARIMA and SARIMAX model against 
 Comparing these predictions we find no discernible difference between the two models. This is not surprising with a difference in RMSE of only 0.3. The reason why the SARIMAX model is somewhat more accurate may be that it throughout predicts a lower price than the SARIMA model.
 
 \subsection{LSTM}\label{sec:lstm}
+In order to get a meaningful result from the different models in the grid search, the RMSE was calculated for each model, and returned to the following dataframe:
+\begin{table}[H]
+    \centering
+    \begin{adjustbox}{width=\columnwidth,center}
+    \import{"data/Figures/Neural networks/"}{RMSE_Tensorflow_head}
+    \end{adjustbox}
+    \caption{RMSE for each model in the grid search.}\label{tab:RMSE_Tensorflow_head}
+\end{table}
+
 
 \subsection{Comparison and Discussion}\label{sec:comparison}
 
