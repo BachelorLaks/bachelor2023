@@ -174,6 +174,9 @@ Given that the NASDAQ gathers it data though sampling form a large range of sale
 
 Even though our best model, the SARIMAX, seems to be somewhat able to catch the trends, we cant say that there is not more information in the residuals. The results from the Ljung-Box test means that we have to reject the null hypothesis. However, rejecting the null hypothesis only tells us that we cant claim that there is not white noise. It does not mean that we can claim that there is white noise. This uncertainty means that we cant be sure how much of the price fluctuations are explained by the model and how much is left in the residuals. 
 
+When suggesting further research we note that when
+examining the Ljung-Box test on the SARIMAX model. It shows that the residuals are not white noise, and that there might be some trends left to capture. We therefore suggest that future research focuses on improving the models and perhaps lenghten the dataset in order to get better odds of picking up these more illusive trends. One posibility for imporving the models is simply to use more computing power as this would allow for more complex models. Another possibility is to use different variables in the multivariate analysis in LSTM as we saw the multivariate was by far the best version of LSTM. This might also apply to the SARIMAX model. It is possible to try different models entierly, but we suggest focusing on multivariate.
+
 \begin{figure}[H]
     \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_186.png}\hfill
     \includegraphics[width=.30\textwidth]{../data/Figures/Neural networks/ForLoop_Tensor/plotModel_72.png}\hfill
